@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6971418024271511982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7229783648361695958}
+  - component: {fileID: 5241233511967169108}
+  m_Layer: 0
+  m_Name: BrickManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7229783648361695958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971418024271511982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 963.26965, y: 489.30832, z: 6.5052505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5241233511967169108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6971418024271511982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5a51ea7a3c07f4fa1da418301d8aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelBricks: []
+  LevelUnbreakableBricks: []
+  BricksPrefab:
+  - {fileID: 5871188179863211413, guid: 211e5973bd369e443847a2ba84617b07, type: 3}
+  - {fileID: 5871188179863211413, guid: ca060e3f34a2bad49892aaec73c554af, type: 3}
+  - {fileID: 5871188179863211413, guid: 5e94c6d41b4f85443b776b13cf8779b1, type: 3}
+  - {fileID: 4682300009737977743, guid: 9f7b22b8d4e80d84596728cde8bfcdce, type: 3}
+  - {fileID: 5871188179863211413, guid: 5c593bf405d17d145aee6ad83bc99b97, type: 3}
+  - {fileID: 5871188179863211413, guid: 6c8d28db87e4f5645b44aec7b6da6a4b, type: 3}
+  - {fileID: 5871188179863211413, guid: 259163ed1f860894c95305ad249149ac, type: 3}
+  - {fileID: 5871188179863211413, guid: 78398d4b20a7bea4399bc1cc37474002, type: 3}
+  - {fileID: 5871188179863211413, guid: a430e3312d2a6bf44b7565c668b643a8, type: 3}
+  - {fileID: 5871188179863211413, guid: b79783676637d0f4bb00785db05d7bdd, type: 3}
+  - {fileID: 5871188179863211413, guid: 2322c417f37f3fa4182c26a9da44d6d0, type: 3}
+  - {fileID: 5871188179863211413, guid: 9983506155ab00d4aabd69a1eb99d426, type: 3}
+  BricksSpawnWeigth:
+  - 0.5
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  - 0.8
+  - 0.1
+  - 0.6
+  RewardList:
+  - {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  - {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
+  - {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
+  RewardSpawnWeigth:
+  - 0.8
+  - 0.2
+  - 0.4
+  RewardSpawnRate: 0.3

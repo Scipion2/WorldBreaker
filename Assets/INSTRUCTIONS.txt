@@ -1,0 +1,28 @@
+Voici un casse-brique 2D presque complet :
+Les assets sont prêts, une scène de test existe : la balle se lance, les briques réagissent. 
+Le score et des bonus sont implémentés...
+Malheureusement le développeur est parti en réanimation.
+Votre mission est de finir le premier niveau !
+
+Level building :
+- Placez des briques de façon à créer un niveau jouable. (3pts)
+- Créez deux nouveaux types de brique d'une autre couleur, l'un valant le double de l'autre. (2pts)
+- Créez un type de brique incassable, de couleur grise. (1pt)
+- Créez un panneau pour la victoire, assignez-le. (1pt)
+- Ajoutez un son lorsque les briques sont détruites. (1pt)
+- Modifiez la deadzone pour que la balle disparaisse complètement en cas d’échec. (1pt)
+
+Scripting :
+- Activez le panneau de victoire dans le Game Manager lorsque requis. (1 pt)
+- Trouvez un moyen de déplacer la raquette avec un input de l'utilisateur. (4pts)
+- Trouvez un moyen de gérer la direction et la force de la balle suite au contact avec la raquette. (3pts)
+Les implémentations attendues sont signalées par les commentaires /* @TODO : … */
+
+Build et envoi :
+- Modifiez le titre du projet dans Edit>Project Settings>Player selon le principe NomPrenomSansAccent_WallBreaker. (1pt)
+- Ajoutez votre scène dans File>BuildSettings et exportez votre projet pour PC dans un dossier du même nom ^^. (1pt)
+- Dans le dossier généré, ajoutez une copie de votre script Paddle.cs (si modifié), zippez tout le dossier et envoyez-moi un lien de téléchargement sur Discord (environ 20Mo). (1pt)
+
+Bonus/Malus : 
+- Ajoutez des éléments ou des fonctionnalités (+2pts).
+- Vous avez une heure : -1pt par heure de retard, dans la limite de -5pts par journée de retard.
