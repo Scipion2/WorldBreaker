@@ -1,46 +1,44 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Ican.WallBreaker 
+
+[RequireComponent(typeof(AudioSource))]
+public class DeadZone : MonoBehaviour
 {
-    [RequireComponent(typeof(AudioSource))]
-    public class DeadZone : MonoBehaviour
+    private Ball ball;
+    private Paddle paddle;
+    private AudioSource missAudio;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        private Ball ball;
-        private Paddle paddle;
-        private AudioSource missAudio;
+        missAudio = GetComponent<AudioSource>();
+    }
 
-        // Start is called before the first frame update
-        void Start()
+    //Called by a collider only if set as a "trigger"
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        ball = other.gameObject.GetComponent<Ball>();
+        if (ball != null)
         {
-            missAudio = GetComponent<AudioSource>();
-        }
-
-        //Called by a collider only if set as a "trigger"
-        void OnTriggerEnter2D(Collider2D other)
-        {
-            ball = other.gameObject.GetComponent<Ball>();
-            if (ball != null)
+            // Equivalent to Rigidbody.isKinematic=true, but Rigidbody2D works a bit differently!                
+            ball.GetComponent<Rigidbody2D>().simulated = false;
+            // Resets the ball only if more than 1 life remains
+            if (ball.lives > 1)
             {
-                // Equivalent to Rigidbody.isKinematic=true, but Rigidbody2D works a bit differently!                
-                ball.GetComponent<Rigidbody2D>().simulated = false;
-                // Resets the ball only if more than 1 life remains
-                if (ball.lives > 1)
-                {
-                    // get the paddle from the GameManager
-                    paddle = GameManager.instance.paddle;
-                    // Resets the ball on the paddle 
-                    ball.transform.position = new Vector2 (paddle.transform.position.x, paddle.transform.position.y+0.25f);
-                    // parent it until next kick off, as the ball can move with the paddle
-                    ball.transform.parent = paddle.transform;
-                }
-                // Execute a public method on the ball
-                ball.ResetBall();
-                // Play loose sound if available
-                if (missAudio.clip != null)
-                {
-                    missAudio.Play();
-                }
+                // get the paddle from the GameManager
+                paddle = GameManager.instance.paddle;
+                // Resets the ball on the paddle 
+                ball.transform.position = new Vector2 (paddle.transform.position.x, paddle.transform.position.y+0.25f);
+                // parent it until next kick off, as the ball can move with the paddle
+                ball.transform.parent = paddle.transform;
+            }
+            // Execute a public method on the ball
+            ball.ResetBall();
+            // Play loose sound if available
+            if (missAudio.clip != null)
+            {
+                missAudio.Play();
             }
         }
     }

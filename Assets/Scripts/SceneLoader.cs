@@ -41,4 +41,18 @@ public class SceneLoader : MonoBehaviour
 
         }
 
+        public void Save()
+        {
+            
+            GameManager.instance.SaveData();
+
+        }
+
+        public void Resume()
+        {
+
+            UIManager.instance.CloseMenu();
+
+        }
+
 }

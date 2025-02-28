@@ -4,120 +4,136 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace Ican.WallBreaker
+
+
+[RequireComponent(typeof(AudioSource))]
+public class GameManager : MonoBehaviour
 {
-    [RequireComponent(typeof(AudioSource))]
-    public class GameManager : MonoBehaviour
+    
+    [HideInInspector] public bool canPlay;
+    [HideInInspector] public Paddle paddle;
+
+    public float startDelay;
+    public AudioClip breakSound;
+    public AudioClip winSound;
+    public AudioClip looseSound;
+    private AudioSource audiosource;
+    private int score;
+
+    public static GameManager instance;
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(this.gameObject);
+    }//Allow To Call This From Any Class
+
+    public void Update()
+    {
+
+        if(Input.GetButtonDown("Cancel"))
+        {
+
+            if(UIManager.instance.GetisWindowOpen())
+            {
+
+                UIManager.instance.CloseMenu();
+
+            }else
+            {
+
+                UIManager.instance.OpenMenu();
+
+            }
+
+        }
+
+    }
+
+    public void SaveData()
+    {}
+
+    // Start is called before the first frame update, but we don't know which script will be executed first!
+    // So, as the instance can be found by other scripts, this script has been set before default time in Edit>Project Setting>Scripts Execution Order.
+    void Start()
     {
         
-        [HideInInspector] public bool canPlay;
-        [HideInInspector] public Paddle paddle;
-        public Ball ball;
+        audiosource = GetComponent<AudioSource>();
+        // Cache the content of the existing text
+       // ResetGame();
+    }
 
-        public float startDelay;
-        public AudioClip breakSound;
-        public AudioClip winSound;
-        public AudioClip looseSound;
-        private AudioSource audiosource;
-        private int score;
-        public Text scoreText;
-        public GameObject readyPanel;
-        public GameObject winPanel;
-        public GameObject loosePanel;
-        private string initialText;
 
-        public static GameManager instance;
-        private void Awake()
+    void ResetGame() 
+    {
+        // Show instruction panel
+        UIManager.instance.DisplayStartPanel(true);
+        // Start game after delay
+        Invoke("StartGame", startDelay);
+    }
+
+    void StartGame() 
+    {
+        canPlay = true;
+        UIManager.instance.DisplayStartPanel(false);
+    }
+
+
+    // Public method to update bricks count, score, called by Brick.cs
+    public void RegisterBreak(int value, Brick brick) 
+    {
+
+        IncreaseScore(value);
+
+        if (BrickManager.instance.Remove(brick)) 
         {
-            if (instance != null && instance != this)
-            {
-                Destroy(this.gameObject);
-                return;
-            }
-            else
-            {
-                instance = this;
-            }
-            DontDestroyOnLoad(this.gameObject);
-        }//Allow To Call This From Any Class
-
-        // Start is called before the first frame update, but we don't know which script will be executed first!
-        // So, as the instance can be found by other scripts, this script has been set before default time in Edit>Project Setting>Scripts Execution Order.
-        void Start()
-        {
-            
-            audiosource = GetComponent<AudioSource>();
-            // Cache the content of the existing text
-            initialText = scoreText.text; 
-            ResetGame();
+            WinLevel();
         }
-
-
-        void ResetGame() 
+        if (breakSound != null)
         {
-            // Show instruction panel
-            readyPanel.SetActive(true);
-            // Start game after delay
-            Invoke("StartGame", startDelay);
+            //Charge the audiosource with the right clip and play it
+            audiosource.clip = breakSound;
+            audiosource.Play();
         }
+    }
 
-        void StartGame() 
+    // Also called by Reward.cs
+    public void IncreaseScore(int scoreAdded)
+    {
+        score += scoreAdded;
+    }
+
+    void WinLevel() 
+    {
+        canPlay = false;
+        if (winSound)
         {
-            canPlay = true;
-            readyPanel.SetActive(false);
+            // PlayOneShot instantiates our audiosource, maybe already playing a break sound
+            audiosource.PlayOneShot(winSound);
         }
+        UIManager.instance.DisplayWinPanel(true);
 
+    }
 
-        // Public method to update bricks count, score, called by Brick.cs
-        public void RegisterBreak(int value, Brick brick) 
+    // Called by Ball.cs
+    public void LooseLevel()
+    {
+        canPlay = false;
+        if (winSound)
         {
-
-            IncreaseScore(value);
-
-            if (BrickManager.instance.Remove(brick)) 
-            {
-                WinLevel();
-            }
-            if (breakSound != null)
-            {
-                //Charge the audiosource with the right clip and play it
-                audiosource.clip = breakSound;
-                audiosource.Play();
-            }
+            audiosource.PlayOneShot(looseSound);
         }
-
-        // Also called by Reward.cs
-        public void IncreaseScore(int scoreAdded)
-        {
-            score += scoreAdded;
-            scoreText.text = initialText + score.ToString();
-        }
-
-        void WinLevel() 
-        {
-            canPlay = false;
-            if (winSound)
-            {
-                // PlayOneShot instantiates our audiosource, maybe already playing a break sound
-                audiosource.PlayOneShot(winSound);
-            }
-            winPanel.gameObject.SetActive(true);
-
-        }
-
-        // Called by Ball.cs
-        public void LooseLevel()
-        {
-            canPlay = false;
-            if (winSound)
-            {
-                audiosource.PlayOneShot(looseSound);
-            }
-            loosePanel.SetActive(true);
-        }
-        public void RestartGame()
-        {
-            SceneManager.LoadScene(0);
-        }
+        UIManager.instance.DisplayLosePanel(true);
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

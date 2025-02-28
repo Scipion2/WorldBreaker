@@ -1,5 +1,4 @@
 using UnityEngine;
-using Ican.WallBreaker;
 using System.Collections.Generic;
 
 public class BrickManager : MonoBehaviour
