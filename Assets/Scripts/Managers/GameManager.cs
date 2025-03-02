@@ -10,65 +10,75 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     
-    [HideInInspector] public bool canPlay;
-    [HideInInspector] public Paddle paddle;
+    [Header("Game Datas")]
+    [Space(10)]
+        private int Score=0;
+        private int Lives=3;
+        private bool isAbleToPlay;
+        private float startDelay;
 
-    public float startDelay;
-    public AudioClip breakSound;
-    public AudioClip winSound;
-    public AudioClip looseSound;
-    private AudioSource audiosource;
-    private int score;
+    [Header("Game Components")]
+    [Space(10)]
+        [SerializeField] private List<Ball> PlayerBalls=new List<Ball>();
+        [SerializeField] private Transform PadleTransform;
 
-    public static GameManager instance;
-    private void Awake()
-    {
-        if (instance != null && instance != this)
+
+    [Header("Audio Components")]
+    [Space(10)]    
+        private AudioClip breakSound;
+        private AudioClip winSound;
+        private AudioClip looseSound;
+        [SerializeField] private AudioSource audiosource;
+
+    //GETTERS
+        public bool GetIsAbleToPlay(){return isAbleToPlay;}//Getter For isAbleToPlay
+        public Transform GetPadleTransform(){return PadleTransform;}//Getter For PadleTransform
+
+    //SETTERS
+
+    //ESSENTIALS
+
+        public static GameManager instance;
+        private void Awake()
         {
-            Destroy(this.gameObject);
-            return;
-        }
-        else
+            if (instance != null && instance != this)
+            {
+                Destroy(this.gameObject);
+                return;
+            }
+            else
+            {
+                instance = this;
+            }
+            DontDestroyOnLoad(this.gameObject);
+        }//Allow To Call This From Any Class
+
+        public void Update()
         {
-            instance = this;
-        }
-        DontDestroyOnLoad(this.gameObject);
-    }//Allow To Call This From Any Class
 
-    public void Update()
-    {
-
-        if(Input.GetButtonDown("Cancel"))
-        {
-
-            if(UIManager.instance.GetisWindowOpen())
+            if(Input.GetButtonDown("Cancel"))
             {
 
-                UIManager.instance.CloseMenu();
+                if(UIManager.instance.GetisWindowOpen())
+                {
 
-            }else
-            {
+                    UIManager.instance.CloseMenu();
 
-                UIManager.instance.OpenMenu();
+                }else
+                {
+
+                    UIManager.instance.OpenMenu();
+
+                }
 
             }
 
         }
 
-    }
+    //
 
     public void SaveData()
     {}
-
-    // Start is called before the first frame update, but we don't know which script will be executed first!
-    // So, as the instance can be found by other scripts, this script has been set before default time in Edit>Project Setting>Scripts Execution Order.
-    void Start()
-    {
-        
-        audiosource = GetComponent<AudioSource>();
-        // Cache the content of the existing text
-       // ResetGame();
-    }
 
 
     void ResetGame() 
@@ -81,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     void StartGame() 
     {
-        canPlay = true;
+        isAbleToPlay = true;
         UIManager.instance.DisplayStartPanel(false);
     }
 
@@ -107,12 +117,12 @@ public class GameManager : MonoBehaviour
     // Also called by Reward.cs
     public void IncreaseScore(int scoreAdded)
     {
-        score += scoreAdded;
+        Score += scoreAdded;
     }
 
     void WinLevel() 
     {
-        canPlay = false;
+        isAbleToPlay = false;
         if (winSound)
         {
             // PlayOneShot instantiates our audiosource, maybe already playing a break sound
@@ -125,7 +135,7 @@ public class GameManager : MonoBehaviour
     // Called by Ball.cs
     public void LooseLevel()
     {
-        canPlay = false;
+        isAbleToPlay = false;
         if (winSound)
         {
             audiosource.PlayOneShot(looseSound);

@@ -6,14 +6,7 @@ using UnityEngine;
 public class DeadZone : MonoBehaviour
 {
     private Ball ball;
-    private Paddle paddle;
-    private AudioSource missAudio;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        missAudio = GetComponent<AudioSource>();
-    }
+    [SerializeField] private AudioSource missAudio;
 
     //Called by a collider only if set as a "trigger"
     void OnTriggerEnter2D(Collider2D other)
@@ -27,11 +20,11 @@ public class DeadZone : MonoBehaviour
             if (ball.lives > 1)
             {
                 // get the paddle from the GameManager
-                paddle = GameManager.instance.paddle;
+                Transform paddle = GameManager.instance.GetPadleTransform();
                 // Resets the ball on the paddle 
-                ball.transform.position = new Vector2 (paddle.transform.position.x, paddle.transform.position.y+0.25f);
+                ball.transform.position = new Vector2 (paddle.position.x, paddle.transform.position.y+0.25f);
                 // parent it until next kick off, as the ball can move with the paddle
-                ball.transform.parent = paddle.transform;
+                ball.transform.parent = transform;
             }
             // Execute a public method on the ball
             ball.ResetBall();

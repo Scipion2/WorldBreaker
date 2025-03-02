@@ -18,19 +18,12 @@ public class Paddle : MonoBehaviour
 {
     private float horizontal;
     public float speed = 1.0f,AnglePower=10f;
-    private Rigidbody2D paddle;
+    [SerializeField] private Rigidbody2D paddle;
 
-    void Start() 
-    {
-        paddle = GetComponent<Rigidbody2D>();
-        // Fill a public reference in the GameManager to this paddle
-        GameManager.instance.paddle = this;
-    }
-    
     void FixedUpdate() // Physics callback
     {
         // Check if game is off
-        if (GameManager.instance.canPlay == false)
+        if (GameManager.instance.GetIsAbleToPlay() == false)
         {
             // we quit that block code and don't execute next lines
             return;

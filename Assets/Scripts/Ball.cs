@@ -7,31 +7,21 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Ball : MonoBehaviour
 {
-    [Range(1, 3)] public int lives = 3;
-    public Sprite[] sprites;
-    private SpriteRenderer ballRenderer;
+    [SerializeField] private Sprite[] sprites;
+    [SerializeField] private SpriteRenderer ballRenderer;
     public float launchSpeed = 1.0f;
     public float maxSpeed = 100f;
-    private AudioSource hitAudio;
+    [SerializeField] private AudioSource hitAudio;
     public AudioClip[] hitSounds;
     public AudioClip kickSound;
-    private Rigidbody2D body;    
+    [SerializeField] private Rigidbody2D body;    
     private bool needKickOff = true;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        body = GetComponent<Rigidbody2D>();
-        ballRenderer = GetComponent<SpriteRenderer>();
-        hitAudio = GetComponent<AudioSource>();
-        // Fill a public reference in the GameManager to this ball
-    }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         // Check if game is on
-        if (GameManager.instance.canPlay == false)
+        if (GameManager.instance.GetIsAbleToPlay() == false)
         {
             // Equivalent to Rigidbody.isKinematic=true, but rigidbody2D works a bit differently!
             body.simulated = false;
@@ -59,7 +49,7 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         // Check if the Audiosource is not null and avoid a call on start up as the ball is on the paddle 
-        if (hitAudio && GameManager.instance.canPlay)
+        if (hitAudio && GameManager.instance.GetIsAbleToPlay())
         {
             // Plays a random clip to make it less repetitive
             int randomNumber = Random.Range(0, hitSounds.Length);
@@ -90,8 +80,8 @@ public class Ball : MonoBehaviour
     public void ResetBall()
     {
         // Decrease lives count
-        lives--;
-        if (lives == 0) 
+        //lives--;
+        if (//lives == 0) 
         {
             // Tells the GameManager the game is over
             GameManager.instance.LooseLevel();
