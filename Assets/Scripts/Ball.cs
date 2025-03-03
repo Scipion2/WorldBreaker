@@ -21,33 +21,36 @@ public class Ball : MonoBehaviour
     //SETTERS
         public void SetActiveBall(){isActiveBall=true;}//Setter For isActiveBall
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        // Check if game is on
-        if (isActiveBall == false)
-        {
-            // Equivalent to Rigidbody.isKinematic=true, but rigidbody2D works a bit differently!
-            body.simulated = false;
-        }
-        // needKickOff is on by default and after reset 
-        else if (needKickOff == true && Input.GetButton("Jump"))
-        {
-            KickBall();
-        }
+    //ESSENTIALS
 
-        // limit the velocity
-        if (body.linearVelocity.magnitude > maxSpeed)
+        public void Start()
         {
-            body.linearVelocity = body.linearVelocity.normalized * maxSpeed;
+
+            body.simulated=false;
+
         }
-        //Teacher's Cheat
-        if (Input.GetKeyDown(KeyCode.W))
+    
+        void FixedUpdate()
         {
-            GameObject GO = GameObject.Instantiate(this.gameObject, this.transform.position, Quaternion.identity);
-            GO.GetComponent<Rigidbody2D>().linearVelocity = body.linearVelocity*1.1f;
+            // Check if game is on
+            if (isActiveBall == false)
+            {
+                // Equivalent to Rigidbody.isKinematic=true, but rigidbody2D works a bit differently!
+                body.simulated = false;
+            }
+            // needKickOff is on by default and after reset 
+            else if (needKickOff == true && Input.GetButton("Jump"))
+            {
+                KickBall();
+            }
+
+            // limit the velocity
+            if (body.linearVelocity.magnitude > maxSpeed)
+            {
+                body.linearVelocity = body.linearVelocity.normalized * maxSpeed;
+            }
+
         }
-    }
 
     // Called if this collided with another collider
     void OnCollisionEnter2D(Collision2D other)
@@ -88,7 +91,8 @@ public class Ball : MonoBehaviour
         {
 
             needKickOff = true;
-            ballRenderer.color=new Color((float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,(float)Random.Range(50,100)/100);
+            body.simulated=false;
+            ballRenderer.color=new Color((float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,1f);
 
         }
             

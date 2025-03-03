@@ -20,6 +20,10 @@ public class Paddle : MonoBehaviour
     [SerializeField] private float speed = 1.0f,AnglePower=10f;
     [SerializeField] private Rigidbody2D paddle;
 
+    //GETTERS
+
+    //ESSENTIALS
+
     void FixedUpdate() // Physics callback
     {
         // Check if game is on

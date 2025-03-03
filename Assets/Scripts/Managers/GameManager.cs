@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
 
         }
 
-        CurrentBall=Instantiate(BallPrefab,PadleTransform.position,Quaternion.identity,PadleTransform);
+        CurrentBall=Instantiate(BallPrefab,new Vector2(PadleTransform.position.x,PadleTransform.position.y+0.2f),Quaternion.identity,PadleTransform);
         CurrentBall.SetActiveBall();
         
 
@@ -178,6 +178,7 @@ public class GameManager : MonoBehaviour
         {
 
             UpdateLives();
+            CurrentBall.transform.parent=PadleTransform;
             return true;
 
         }
