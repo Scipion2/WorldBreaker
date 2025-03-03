@@ -17,26 +17,26 @@ public enum RewardTypes
 public class Paddle : MonoBehaviour
 {
     private float horizontal;
-    public float speed = 1.0f,AnglePower=10f;
+    [SerializeField] private float speed = 1.0f,AnglePower=10f;
     [SerializeField] private Rigidbody2D paddle;
 
     void FixedUpdate() // Physics callback
     {
-        // Check if game is off
-        if (GameManager.instance.GetIsAbleToPlay() == false)
+        // Check if game is on
+        if (GameManager.instance.GetIsAbleToPlay())
         {
-            // we quit that block code and don't execute next lines
-            return;
-        }
-        horizontal=Input.GetAxis("Horizontal");
-        paddle.AddRelativeForce(Vector2.right*horizontal*speed*Time.fixedDeltaTime);
 
+            horizontal=Input.GetAxis("Horizontal");
+            paddle.AddRelativeForce(Vector2.right*horizontal*speed*Time.fixedDeltaTime);
+
+        }
+        
     }
 
     void OnCollisionEnter2D(Collision2D other) // Called if this collided with another collider
     {
         
-        if(other!=null)
+        if(other!=null && other.gameObject.tag == "Ball")
         {
 
             float angle=Vector2.SignedAngle(this.transform.position,other.gameObject.transform.position);
@@ -56,6 +56,7 @@ public class Paddle : MonoBehaviour
                 break; // break keyword tells the enum to stop the loop search, if the item as been found 
 
             case RewardTypes.Life:
+                GameManager.instance.IncreaseLives();
                 
                 break;
 

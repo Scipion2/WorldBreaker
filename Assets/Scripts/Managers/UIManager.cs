@@ -10,9 +10,14 @@ public class UIManager : MonoBehaviour
         [SerializeField] private GameObject WinPanelPrefab;
         [SerializeField] private GameObject LosePanelPrefab;
         [SerializeField] private GameObject StartPanelPrefab;
+        [SerializeField] private GameUI GameUIPrefab;
 
-    private GameObject MenuWindow,WinPanel,LosePanel,StartPanel;
-    private bool isWindowOpen=false;
+    [Header("UI Datas")]
+    [Space(10)]
+
+        private GameObject MenuWindow,WinPanel,LosePanel,StartPanel;
+        private GameUI GameUIDisplay;
+        private bool isWindowOpen=false;
 
     //GETTERS
 
@@ -32,6 +37,23 @@ public class UIManager : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }//Allow To Call This From Any Class
+
+    public void UpdateScoreDisplay(int Score)
+    {
+
+        GameUIDisplay.SetScore(Score.ToString());
+
+    }
+
+    public void DisplayGameUI(bool isDisplay)
+    {
+
+        if(GameUIDisplay==null)
+            GameUIDisplay=Instantiate(GameUIPrefab,this.transform);
+
+        GameUIDisplay.gameObject.SetActive(isDisplay);
+
+    }
 
 
     public void OpenMenu()
@@ -56,6 +78,13 @@ public class UIManager : MonoBehaviour
     public void DisplayStartPanel(bool isDisplay)
     {
 
+        if(StartPanel==null)
+        {
+
+            StartPanel=Instantiate(StartPanelPrefab,this.transform);
+
+        }
+
         StartPanel.gameObject.SetActive(isDisplay);
 
     }
@@ -63,12 +92,26 @@ public class UIManager : MonoBehaviour
     public void DisplayWinPanel(bool isDisplay)
     {
 
+        if(WinPanel==null)
+        {
+
+            WinPanel=Instantiate(WinPanelPrefab,this.transform);
+
+        }
+
         WinPanel.gameObject.SetActive(isDisplay);
 
     }
 
     public void DisplayLosePanel(bool isDisplay)
     {
+
+        if(LosePanel==null)
+        {
+
+            LosePanel=Instantiate(LosePanelPrefab,this.transform);
+
+        }
 
         LosePanel.gameObject.SetActive(isDisplay);
 

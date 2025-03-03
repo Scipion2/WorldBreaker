@@ -16,12 +16,16 @@ public class Ball : MonoBehaviour
     public AudioClip kickSound;
     [SerializeField] private Rigidbody2D body;    
     private bool needKickOff = true;
+    private bool isActiveBall=false;
+
+    //SETTERS
+        public void SetActiveBall(){isActiveBall=true;}//Setter For isActiveBall
 
     // Update is called once per frame
     void FixedUpdate()
     {
         // Check if game is on
-        if (GameManager.instance.GetIsAbleToPlay() == false)
+        if (isActiveBall == false)
         {
             // Equivalent to Rigidbody.isKinematic=true, but rigidbody2D works a bit differently!
             body.simulated = false;
@@ -79,28 +83,15 @@ public class Ball : MonoBehaviour
     // Called by DeadZone.cs
     public void ResetBall()
     {
-        // Decrease lives count
-        //lives--;
-        if (//lives == 0) 
+
+        if(GameManager.instance.LoseLive())
         {
-            // Tells the GameManager the game is over
-            GameManager.instance.LooseLevel();
-        }
-        else 
-        {
-            // Reset the ball, changing the sprite to show color change
-            ballRenderer.sprite = sprites[sprites.Length-lives];
+
             needKickOff = true;
+            ballRenderer.color=new Color((float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,(float)Random.Range(50,100)/100);
+
         }
+            
     }
 
-    public void IncreaseLife()
-    {
-        if (lives <= 2)
-        {
-            lives++;
-            // switch the colored sprite, 3 being the max applicable value
-            ballRenderer.sprite = sprites[sprites.Length-lives];
-        }
-    }
 }

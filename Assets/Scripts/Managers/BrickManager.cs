@@ -49,10 +49,21 @@ public class BrickManager : MonoBehaviour
     public void ClearLevel()
     {
 
-        LevelBricks.ForEach(Delete);
-        LevelBricks.Clear();
-        LevelUnbreakableBricks.ForEach(Delete);
-        LevelUnbreakableBricks.Clear();
+        if(LevelBricks.Count!=0)
+        {
+
+            LevelBricks.ForEach(Delete);
+            LevelBricks.Clear();
+
+        }
+
+        if(LevelUnbreakableBricks.Count!=0)
+        {
+
+            LevelUnbreakableBricks.ForEach(Delete);
+            LevelUnbreakableBricks.Clear();
+
+        }
 
     }
 
@@ -60,7 +71,8 @@ public class BrickManager : MonoBehaviour
     {
 
         //LevelBricks.Remove(BrickToRemove);
-        Object.DestroyImmediate(BrickToRemove.gameObject);
+        if(BrickToRemove!=null)
+            Object.DestroyImmediate(BrickToRemove.gameObject);
 
     }
 

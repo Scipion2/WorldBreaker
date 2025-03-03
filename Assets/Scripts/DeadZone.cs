@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-
-[RequireComponent(typeof(AudioSource))]
 public class DeadZone : MonoBehaviour
 {
     private Ball ball;
@@ -17,7 +15,7 @@ public class DeadZone : MonoBehaviour
             // Equivalent to Rigidbody.isKinematic=true, but Rigidbody2D works a bit differently!                
             ball.GetComponent<Rigidbody2D>().simulated = false;
             // Resets the ball only if more than 1 life remains
-            if (ball.lives > 1)
+            if (GameManager.instance.GetLives() > 1)
             {
                 // get the paddle from the GameManager
                 Transform paddle = GameManager.instance.GetPadleTransform();

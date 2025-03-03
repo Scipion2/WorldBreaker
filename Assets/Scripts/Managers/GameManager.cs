@@ -14,13 +14,19 @@ public class GameManager : MonoBehaviour
     [Space(10)]
         private int Score=0;
         private int Lives=3;
-        private bool isAbleToPlay;
+        private bool isAbleToPlay=false;
         private float startDelay;
+        [SerializeField] private float BallSpacing;
+        public enum GameMode{Classic,Arcade}
+        private GameMode CurrentGameMode;
 
     [Header("Game Components")]
     [Space(10)]
         [SerializeField] private List<Ball> PlayerBalls=new List<Ball>();
         [SerializeField] private Transform PadleTransform;
+        [SerializeField] private Ball BallPrefab;
+        [SerializeField] private Ball CurrentBall;
+        [SerializeField] private Transform BallTankOrigin;
 
 
     [Header("Audio Components")]
@@ -33,8 +39,12 @@ public class GameManager : MonoBehaviour
     //GETTERS
         public bool GetIsAbleToPlay(){return isAbleToPlay;}//Getter For isAbleToPlay
         public Transform GetPadleTransform(){return PadleTransform;}//Getter For PadleTransform
+        public int GetLives(){return Lives;}//Getter For Lives
+        public GameMode GetCurrentGameMode(){return CurrentGameMode;}//Getter For CurrentGameMode
 
     //SETTERS
+
+        public void SetCurrentGameMode(GameMode SRC){CurrentGameMode=SRC;}//Setter For CurrentGameMode
 
     //ESSENTIALS
 
@@ -81,18 +91,32 @@ public class GameManager : MonoBehaviour
     {}
 
 
-    void ResetGame() 
+    public void ResetGame(int LivesCount) 
     {
         // Show instruction panel
         UIManager.instance.DisplayStartPanel(true);
+
+        Lives=LivesCount;
         // Start game after delay
         Invoke("StartGame", startDelay);
     }
 
-    void StartGame() 
+    private void StartGame() 
     {
         isAbleToPlay = true;
         UIManager.instance.DisplayStartPanel(false);
+
+        for(int i=0;i<Lives;++i)
+        {
+
+            PlayerBalls.Add(Instantiate(BallPrefab,new Vector2(BallTankOrigin.position.x+BallSpacing*i,BallTankOrigin.position.y),Quaternion.identity,BallTankOrigin));
+
+        }
+
+        CurrentBall=Instantiate(BallPrefab,PadleTransform.position,Quaternion.identity,PadleTransform);
+        CurrentBall.SetActiveBall();
+        
+
     }
 
 
@@ -132,8 +156,45 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void IncreaseLives()
+    {
+
+        Lives++;
+
+    }
+
+    public bool LoseLive()
+    {
+
+        Lives--;
+
+        if(Lives==0)
+        {
+
+            Defeat();
+            return false;
+
+        }else
+        {
+
+            UpdateLives();
+            return true;
+
+        }
+
+    }
+
+    private void UpdateLives()
+    {
+
+        Ball LiveToLose=PlayerBalls[PlayerBalls.Count-1];
+        Object.Destroy(LiveToLose.gameObject);
+        PlayerBalls.Remove(LiveToLose);
+
+    }
+
     // Called by Ball.cs
-    public void LooseLevel()
+    public void Defeat()
     {
         isAbleToPlay = false;
         if (winSound)
@@ -142,8 +203,5 @@ public class GameManager : MonoBehaviour
         }
         UIManager.instance.DisplayLosePanel(true);
     }
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(0);
-    }
+
 }
