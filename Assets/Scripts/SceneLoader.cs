@@ -56,4 +56,18 @@ public class SceneLoader : MonoBehaviour
 
         }
 
+        public void Retry()
+        {
+
+            //
+
+        }
+
+        public void GoToNextLevel()
+        {
+
+            LevelManager.instance.NextArcadeStage();
+
+        }
+
 }

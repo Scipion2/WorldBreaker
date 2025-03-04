@@ -60,6 +60,14 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void SetLevelDisplay(string LevelType,string LevelNumber)
+    {
+
+        GameUIDisplay.SetLevelTitle(LevelType);
+        GameUIDisplay.SetLevel(LevelNumber);
+
+    }
+
     public void DisplayGameUI(bool isDisplay)
     {
 

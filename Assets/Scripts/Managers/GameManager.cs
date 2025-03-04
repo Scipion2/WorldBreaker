@@ -149,11 +149,15 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore(int scoreAdded)
     {
         Score += scoreAdded;
+        UIManager.instance.UpdateScoreDisplay(Score);
     }
 
     void WinLevel() 
     {
-        isAbleToPlay = false;
+        isAbleToPlay = CurrentGameMode==GameMode.Arcade ? true : false;
+        CurrentBall.transform.position=new Vector2(PadleTransform.position.x,PadleTransform.position.y+0.2f);
+        CurrentBall.transform.parent=PadleTransform;
+        CurrentBall.ResetBall();
         if (winSound)
         {
             // PlayOneShot instantiates our audiosource, maybe already playing a break sound

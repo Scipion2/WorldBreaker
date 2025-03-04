@@ -8,6 +8,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject GameModeSelection,LevelSelection,Game;
     private int LevelNumber=1;
 
+    //GETTERS
+
+    //SETTERS
+
+        public void InitLevelNumber(){LevelNumber=-1;}//Setter To Reset LevelNumber
+
 
     public static LevelManager instance;
         private void Awake()
@@ -38,10 +44,23 @@ public class LevelManager : MonoBehaviour
 
         GameModeSelection.gameObject.SetActive(false);
         Game.gameObject.SetActive(true);
-        SpawnLevel(Spawner.Difficulty.Medium);
+        LevelNumber=1;
+        SpawnLevel(Spawner.Difficulty.Easy);
         GameManager.instance.ResetGame(5);
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Arcade);
         UIManager.instance.DisplayGameUI(true);
+        UIManager.instance.SetLevelDisplay("Stage :",LevelNumber.ToString());
+
+    }
+
+    public void NextArcadeStage()
+    {
+
+        LevelNumber++;
+        UIManager.instance.SetLevelDisplay("Stage :",LevelNumber.ToString());
+        LevelGenerator.SpawnMap();
+        GameManager.instance.IncreaseLives();
+        UIManager.instance.DisplayWinPanel(false);
 
     }
 
@@ -72,6 +91,7 @@ public class LevelManager : MonoBehaviour
         GameManager.instance.ResetGame(3);
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Classic);
         UIManager.instance.DisplayGameUI(true);
+        UIManager.instance.SetLevelDisplay("Level :",(LevelNumber+1).ToString());
 
     }
 }
