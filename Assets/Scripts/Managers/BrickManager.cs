@@ -12,6 +12,10 @@ public class BrickManager : MonoBehaviour
     [SerializeField] private float[] RewardSpawnWeigth;
     [SerializeField] private float RewardSpawnRate;
 
+    //GETTERS
+
+        public bool isEmpty(){return LevelBricks.Count!=0 ? false : true;}
+
     public static BrickManager instance;
     private void Awake()
     {

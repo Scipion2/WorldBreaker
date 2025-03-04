@@ -3,6 +3,11 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
 
+    [Header("UI Components")]
+    [Space(10)]
+
+        [SerializeField] private Transform UIParent;
+
     [Header("UI Prefabs")]
     [Space(10)]
     
@@ -37,6 +42,16 @@ public class UIManager : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }//Allow To Call This From Any Class
+
+    public void HideAll()
+    {
+
+        DisplayLosePanel(false);
+        DisplayWinPanel(false);
+        DisplayWinPanel(false);
+        DisplayGameUI(false);
+
+    }
 
     public void UpdateScoreDisplay(int Score)
     {
@@ -81,7 +96,7 @@ public class UIManager : MonoBehaviour
         if(StartPanel==null)
         {
 
-            StartPanel=Instantiate(StartPanelPrefab,this.transform);
+            StartPanel=Instantiate(StartPanelPrefab,UIParent);
 
         }
 
@@ -95,7 +110,7 @@ public class UIManager : MonoBehaviour
         if(WinPanel==null)
         {
 
-            WinPanel=Instantiate(WinPanelPrefab,this.transform);
+            WinPanel=Instantiate(WinPanelPrefab,UIParent);
 
         }
 
@@ -109,7 +124,7 @@ public class UIManager : MonoBehaviour
         if(LosePanel==null)
         {
 
-            LosePanel=Instantiate(LosePanelPrefab,this.transform);
+            LosePanel=Instantiate(LosePanelPrefab,UIParent);
 
         }
 

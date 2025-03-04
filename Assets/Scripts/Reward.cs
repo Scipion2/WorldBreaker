@@ -1,8 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(Rigidbody2D))]
 public class Reward : MonoBehaviour
 {
     public RewardTypes reward; // Creates a variable as a dropdown of types, as defined in Paddle.cs

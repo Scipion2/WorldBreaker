@@ -17,6 +17,7 @@ public class SceneLoader : MonoBehaviour
         {
 
             SceneManager.LoadScene("Menu");
+            UIManager.instance.HideAll();
 
         }
 

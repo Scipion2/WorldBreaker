@@ -38,7 +38,7 @@ public class LevelManager : MonoBehaviour
 
         GameModeSelection.gameObject.SetActive(false);
         Game.gameObject.SetActive(true);
-        SpawnLevel(Spawner.Difficulty.Easy);
+        SpawnLevel(Spawner.Difficulty.Medium);
         GameManager.instance.ResetGame(5);
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Arcade);
         UIManager.instance.DisplayGameUI(true);

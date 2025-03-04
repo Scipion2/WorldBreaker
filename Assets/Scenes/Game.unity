@@ -4037,6 +4037,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 0f890c0ca5d49394f855ab8e9a7f3441, type: 3}
     - target: {fileID: 1434801170968177260, guid: d035cf7479f486e4a981bd2aa08ee992,
         type: 3}
+      propertyPath: startDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434801170968177260, guid: d035cf7479f486e4a981bd2aa08ee992,
+        type: 3}
       propertyPath: BallSpacing
       value: 0.5
       objectReference: {fileID: 0}

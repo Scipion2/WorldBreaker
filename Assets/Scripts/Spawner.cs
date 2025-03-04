@@ -71,7 +71,7 @@ public class Spawner : MonoBehaviour
                 break;
 
             default :
-                SpawnByQuantity(Random.Range(1,30));
+                SpawnByQuantity(Random.Range(4,15));
                 break;
 
         }
@@ -83,8 +83,9 @@ public class Spawner : MonoBehaviour
     {
 
         BrickManager.instance.ClearLevel();
+        Debug.Log("Spawned by quantity");
 
-        for(int i=0;i<NumberOfBricksToSpawn;++i)
+        for(int i=0;i<NumberOfBricksToSpawn;)
         {
 
             for(int x=X_Origin;x<X_Max;++x)
@@ -96,7 +97,12 @@ public class Spawner : MonoBehaviour
                     int Seed=Random.Range(0,101);
 
                     if(SpawnRate>(float)Seed/100)
+                    {
+
                         Instantiate(BrickManager.instance.GetRandomBrick(),new Vector2(x*BrickWidth,y*BrickHeigth),Quaternion.identity,Parent);
+                        ++i;
+
+                    }
 
                 }
 
@@ -113,8 +119,9 @@ public class Spawner : MonoBehaviour
     {
 
         BrickManager.instance.ClearLevel();
+        Debug.Log("Spawned by mirror");
 
-        for(int x=X_Origin;x<X_Max/2-1;++x)
+        for(int x=-Mathf.Abs(X_Origin-X_Max)/2;x<0;++x)
         {
 
 
@@ -143,12 +150,13 @@ public class Spawner : MonoBehaviour
     {
 
          BrickManager.instance.ClearLevel();
+         Debug.Log("Spawned by doble mirror");
 
-        for(int x=X_Origin;x<X_Max/2-1;++x)
+        for(int x=-Mathf.Abs(X_Origin-X_Max)/2;x<0;++x)
         {
 
 
-            for(int y=Y_Origin;y<Y_Max/2-1;++y)
+            for(int y=-Mathf.Abs(Y_Origin-Y_Max)/2;y<0;++y)
             {
 
                 int Seed=Random.Range(0,101);
@@ -175,6 +183,7 @@ public class Spawner : MonoBehaviour
     {
 
         BrickManager.instance.ClearLevel();
+        Debug.Log("Spawned by random");
 
         for(int x=X_Origin;x<X_Max;++x)
         {

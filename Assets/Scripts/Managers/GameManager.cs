@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
         private int Score=0;
         private int Lives=3;
         private bool isAbleToPlay=false;
-        private float startDelay;
+        [SerializeField] private float startDelay;
         [SerializeField] private float BallSpacing;
         public enum GameMode{Classic,Arcade}
         private GameMode CurrentGameMode;
@@ -80,6 +80,13 @@ public class GameManager : MonoBehaviour
                     UIManager.instance.OpenMenu();
 
                 }
+
+            }
+
+            if(Input.GetKeyUp(KeyCode.P))
+            {
+
+                IncreaseLives();
 
             }
 
@@ -160,6 +167,7 @@ public class GameManager : MonoBehaviour
     {
 
         Lives++;
+        PlayerBalls.Add(Instantiate(BallPrefab,new Vector2(BallTankOrigin.position.x+BallSpacing*PlayerBalls.Count,BallTankOrigin.position.y),Quaternion.identity,BallTankOrigin));
 
     }
 
