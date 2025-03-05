@@ -643,7 +643,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &642583374
 GameObject:
@@ -1919,9 +1919,21 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 6996623401668626809, guid: a7ba6bcb86c2f894f8d8afc6db9dce93,
         type: 3}
+      propertyPath: ScoreBoardPrefab
+      value: 
+      objectReference: {fileID: 1872454206808624059, guid: d3403a9eed64c504ca4c278af5b23cd7,
+        type: 3}
+    - target: {fileID: 6996623401668626809, guid: a7ba6bcb86c2f894f8d8afc6db9dce93,
+        type: 3}
       propertyPath: StartPanelPrefab
       value: 
       objectReference: {fileID: 2953232759812241479, guid: ef3213f183311b748b2e954e846e3b51,
+        type: 3}
+    - target: {fileID: 6996623401668626809, guid: a7ba6bcb86c2f894f8d8afc6db9dce93,
+        type: 3}
+      propertyPath: ScoreRecordPrefab
+      value: 
+      objectReference: {fileID: 3378562548240327500, guid: 3130c9a480ef6d14fbfac72fabd3fea4,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

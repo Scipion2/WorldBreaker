@@ -15,33 +15,57 @@ public class UIManager : MonoBehaviour
         [SerializeField] private GameObject WinPanelPrefab;
         [SerializeField] private GameObject LosePanelPrefab;
         [SerializeField] private GameObject StartPanelPrefab;
+        [SerializeField] private ScoreBoard ScoreBoardPrefab;
+        [SerializeField] private GameObject ScoreRecordPrefab;
         [SerializeField] private GameUI GameUIPrefab;
 
     [Header("UI Datas")]
     [Space(10)]
 
-        private GameObject MenuWindow,WinPanel,LosePanel,StartPanel;
+        private GameObject MenuWindow,WinPanel,LosePanel,StartPanel,ScoreRecord;
         private GameUI GameUIDisplay;
+        private ScoreBoard ScoreBoardDisplay;
         private bool isWindowOpen=false;
 
     //GETTERS
 
         public bool GetisWindowOpen(){return isWindowOpen;}//Getter For isWindowOpen
 
-    public static UIManager instance;
-    private void Awake()
-    {
-        if (instance != null && instance != this)
+    //ESSENTIALS
+
+        public static UIManager instance;
+        private void Awake()
         {
-            Destroy(this.gameObject);
-            return;
-        }
-        else
+            if (instance != null && instance != this)
+            {
+                Destroy(this.gameObject);
+                return;
+            }
+            else
+            {
+                instance = this;
+            }
+            DontDestroyOnLoad(this.gameObject);
+        }//Allow To Call This From Any Class
+
+        public void Update()
         {
-            instance = this;
+
+            if(Input.GetKeyDown(KeyCode.Tab))
+            {
+
+                DisplayScoreBoard(true);
+
+            }
+
+            if(Input.GetKeyUp(KeyCode.Tab))
+            {
+
+                DisplayScoreBoard(false);
+
+            }
+
         }
-        DontDestroyOnLoad(this.gameObject);
-    }//Allow To Call This From Any Class
 
     public void HideAll()
     {
@@ -140,4 +164,33 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void DisplayScoreBoard(bool isDisplay)
+    {
+
+        if(ScoreBoardDisplay==null)
+        {
+
+            ScoreBoardDisplay=Instantiate(ScoreBoardPrefab,UIParent);
+
+        }
+
+        ScoreBoardDisplay.gameObject.SetActive(isDisplay);
+
+    }
+
+    public void DisplayScoreRecord(bool isDisplay)
+    {
+
+        if(ScoreRecord==null)
+        {
+
+            ScoreRecord=Instantiate(ScoreRecordPrefab,UIParent);
+
+        }
+
+        ScoreRecord.gameObject.SetActive(isDisplay);
+
+    }
+
 }
+

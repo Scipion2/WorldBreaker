@@ -31,7 +31,7 @@ public class Paddle : MonoBehaviour
         {
 
             horizontal=Input.GetAxis("Horizontal");
-            paddle.AddRelativeForce(Vector2.right*horizontal*speed*Time.fixedDeltaTime);
+            this.transform.Translate(new Vector3(horizontal*speed*Time.fixedDeltaTime,0,0));
 
         }
         
@@ -70,7 +70,10 @@ public class Paddle : MonoBehaviour
             
             case RewardTypes.Weapon: 
                 Debug.Log("Weapon reward: to be implemented...");
-                break;                             
+                break; 
+
+            default :
+            break;                            
         }
     }
 

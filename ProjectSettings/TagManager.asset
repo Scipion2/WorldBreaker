@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ball
+  - NormalBrick
+  - DuplicateBrick
+  - SpawnBrick
   layers:
   - Default
   - TransparentFX
