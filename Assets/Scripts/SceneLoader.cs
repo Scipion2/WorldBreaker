@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -63,7 +64,22 @@ public class SceneLoader : MonoBehaviour
         public void Retry()
         {
 
-            //
+            switch(GameManager.instance.GetCurrentGameMode())
+            {
+
+                case GameManager.GameMode.Classic :
+                
+                break;
+
+                case GameManager.GameMode.Arcade :
+
+                break;
+
+                default :
+
+                break;
+
+            }
 
         }
 
