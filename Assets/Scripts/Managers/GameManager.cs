@@ -90,6 +90,22 @@ public class GameManager : MonoBehaviour
 
             }
 
+            if(Input.GetKeyUp(KeyCode.O))
+            {
+
+                Debug.Log("Trop Fort");
+                WinLevel();
+
+            }
+
+            if(Input.GetKeyUp(KeyCode.I))
+            {
+
+                BrickManager.instance.ClearLevel();
+                RegisterBreak(0,null);
+
+            }
+
         }
 
     //
@@ -132,12 +148,15 @@ public class GameManager : MonoBehaviour
     {
 
         IncreaseScore(value);
+        BrickManager.instance.Remove(brick);
 
-        if (BrickManager.instance.Remove(brick)) 
+        if(BrickManager.instance.isEmpty()) 
         {
             WinLevel();
         }
-        if (breakSound != null)
+
+
+        if(breakSound != null)
         {
             //Charge the audiosource with the right clip and play it
             audiosource.clip = breakSound;
@@ -158,11 +177,17 @@ public class GameManager : MonoBehaviour
         CurrentBall.transform.position=new Vector2(PadleTransform.position.x,PadleTransform.position.y+0.2f);
         CurrentBall.transform.parent=PadleTransform;
         CurrentBall.ResetBall();
+
+        if(CurrentGameMode==GameMode.Classic)
+            LevelManager.instance.SetisLevelAvailable(true);
+
+
         if (winSound)
         {
             // PlayOneShot instantiates our audiosource, maybe already playing a break sound
             audiosource.PlayOneShot(winSound);
         }
+
         UIManager.instance.DisplayWinPanel(true);
 
     }

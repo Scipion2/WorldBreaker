@@ -237,6 +237,8 @@ MonoBehaviour:
   - {fileID: 5916640692829447629, guid: a0d848b1a19422642900751485f1dcec, type: 3}
   - {fileID: 6312146807797236894, guid: a05e5178bfe178a46b2b16c65155d6e0, type: 3}
   - {fileID: 2518904659051858600, guid: 551a5b6f179cdbf4a973e0fc3e637865, type: 3}
+  LockedLevelSprite: {fileID: 3615900723022076319, guid: f7af743eed00fc244b51a21053daa1d3,
+    type: 3}
   LevelPreviewPrefab: {fileID: 3461147133542036976, guid: 09811ecb77eda6f4499339edfa09d7d3,
     type: 3}
 --- !u!1 &27151688
@@ -676,6 +678,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: GoToGame
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1302372300}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2366,6 +2380,8 @@ MonoBehaviour:
   GameModeSelection: {fileID: 1002520119}
   LevelSelection: {fileID: 1302372300}
   Game: {fileID: 1303703637}
+  ClassicLevelCount: 4
+  isLevelAvailable: 
 --- !u!850595691 &1072886219
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -4049,7 +4065,7 @@ PrefabInstance:
     - target: {fileID: 1434801170968177260, guid: d035cf7479f486e4a981bd2aa08ee992,
         type: 3}
       propertyPath: startDelay
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1434801170968177260, guid: d035cf7479f486e4a981bd2aa08ee992,
         type: 3}

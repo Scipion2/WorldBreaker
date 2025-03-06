@@ -5,13 +5,17 @@ public class LevelPreview : MonoBehaviour
 {
 
     [SerializeField] private Image SpriteDisplay;
+    [SerializeField] private Button PreviewButton;
     private int LevelNumber;
 
-    public void SetSprite(Sprite src,int LevelNumberSrc)
+    public int SetSprite(Sprite src,int LevelNumberSrc,bool isInteractable)
     {
 
         SpriteDisplay.sprite=src;
         LevelNumber=LevelNumberSrc;
+        PreviewButton.interactable=isInteractable;
+
+        return LevelNumber;
 
     }
 

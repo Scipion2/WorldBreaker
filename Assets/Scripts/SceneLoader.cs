@@ -10,6 +10,8 @@ public class SceneLoader : MonoBehaviour
         {
 
             SceneManager.LoadScene("Game");
+            if(LevelManager.instance!=null)
+                LevelManager.instance.DisplayGameModeSelection();
 
         }
 
@@ -17,7 +19,7 @@ public class SceneLoader : MonoBehaviour
         {
 
             SceneManager.LoadScene("Menu");
-            UIManager.instance.HideAll();
+            HideGame();
 
         }
 
@@ -25,6 +27,7 @@ public class SceneLoader : MonoBehaviour
         {
 
             SceneManager.LoadScene("Settings");
+            HideGame();
 
         }
 
@@ -32,6 +35,7 @@ public class SceneLoader : MonoBehaviour
         {
 
             SceneManager.LoadScene("Credits");
+            HideGame();
 
         }
 
@@ -66,7 +70,21 @@ public class SceneLoader : MonoBehaviour
         public void GoToNextLevel()
         {
 
-            LevelManager.instance.NextArcadeStage();
+            LevelManager.instance.NextStage(GameManager.instance.GetCurrentGameMode());
+
+        }
+
+        private void HideGame()
+        {
+
+            UIManager.instance.HideAll();
+
+            if(LevelManager.instance!=null)
+            {
+
+                LevelManager.instance.ResetDisplay();
+
+            }
 
         }
 

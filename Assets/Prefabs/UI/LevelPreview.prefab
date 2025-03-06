@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpriteDisplay: {fileID: 5169414584117982736}
+  PreviewButton: {fileID: 616303470923019301}
 --- !u!114 &616303470923019301
 MonoBehaviour:
   m_ObjectHideFlags: 0

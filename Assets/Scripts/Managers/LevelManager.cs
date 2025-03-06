@@ -6,13 +6,18 @@ public class LevelManager : MonoBehaviour
     
     [SerializeField] private Spawner LevelGenerator;
     [SerializeField] private GameObject GameModeSelection,LevelSelection,Game;
+    [SerializeField] private int ClassicLevelCount=4;
+    [SerializeField] private bool[] isLevelAvailable;
     private int LevelNumber=1;
 
     //GETTERS
 
+        public bool GetisLevelAvailable(int index){return isLevelAvailable[index];}//Getter For isLevelAvailable
+
     //SETTERS
 
         public void InitLevelNumber(){LevelNumber=-1;}//Setter To Reset LevelNumber
+        public void SetisLevelAvailable(bool value){isLevelAvailable[LevelNumber]=value;}
 
 
     public static LevelManager instance;
@@ -27,12 +32,37 @@ public class LevelManager : MonoBehaviour
             {
                 instance = this;
             }
+            DontDestroyOnLoad(this);
         }//Allow To Call This From Any Class
 
     public void Start()
     {
 
         GameModeSelection.gameObject.SetActive(true);
+        LevelSelection.gameObject.SetActive(false);
+        Game.gameObject.SetActive(false);
+        isLevelAvailable=new bool[ClassicLevelCount];
+        isLevelAvailable[0]=true;
+        for(int i=1;i<ClassicLevelCount;++i)
+        {
+
+            isLevelAvailable[i]=false;
+
+        }
+
+    }
+
+    public void DisplayGameModeSelection()
+    {
+
+        GameModeSelection.gameObject.SetActive(true);
+
+    }
+
+    public void ResetDisplay()
+    {
+
+        GameModeSelection.gameObject.SetActive(false);
         LevelSelection.gameObject.SetActive(false);
         Game.gameObject.SetActive(false);
 
@@ -53,14 +83,55 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void NextArcadeStage()
+    public void NextStage(GameManager.GameMode Current)
     {
 
-        LevelNumber++;
-        UIManager.instance.SetLevelDisplay("Stage :",LevelNumber.ToString());
-        LevelGenerator.SpawnMap();
-        GameManager.instance.IncreaseLives();
+        switch(Current)
+        {
+
+            case GameManager.GameMode.Arcade :
+
+                UIManager.instance.SetLevelDisplay("Stage :",LevelNumber.ToString());
+                LevelGenerator.SpawnMap();
+                GameManager.instance.IncreaseLives();
+
+            break;
+
+            case GameManager.GameMode.Classic :
+
+                
+                if(LevelNumber<ClassicLevelCount)
+                {
+
+                    GameManager.instance.ResetGame(3);
+                    GoToLevel(LevelNumber);
+                    UIManager.instance.SetLevelDisplay("Level :",LevelNumber.ToString());
+
+                }else
+                {
+
+                    SceneManager.LoadScene("Credits");
+                    ResetDisplay();
+                    UIManager.instance.HideAll();
+
+                }
+                
+
+            break;
+
+            default :
+
+                Debug.Log("This Game Mode Doesn't Exist Yet");
+
+            break;
+
+        }
+
+
         UIManager.instance.DisplayWinPanel(false);
+        LevelNumber++;
+
+        
 
     }
 

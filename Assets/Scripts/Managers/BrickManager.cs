@@ -43,7 +43,7 @@ public class BrickManager : MonoBehaviour
     {
 
         LevelBricks.Remove(BrickToRemove);
-        if(LevelBricks.Count==0)
+        if(LevelBricks.Count<=0)
             return true;
 
         return false;
