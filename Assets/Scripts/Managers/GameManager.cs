@@ -190,6 +190,8 @@ public class GameManager : MonoBehaviour
 
         UIManager.instance.DisplayWinPanel(true);
 
+        PadleTransform.position=new Vector3(0,-4,0);
+
     }
 
     public void IncreaseLives()
@@ -240,6 +242,7 @@ public class GameManager : MonoBehaviour
             audiosource.PlayOneShot(looseSound);
         }
         UIManager.instance.DisplayLosePanel(true);
+        PadleTransform.position=new Vector3(0,-4,0);
     }
 
 }

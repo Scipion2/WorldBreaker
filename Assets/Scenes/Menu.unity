@@ -1933,7 +1933,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ScoreRecordPrefab
       value: 
-      objectReference: {fileID: 3378562548240327500, guid: 3130c9a480ef6d14fbfac72fabd3fea4,
+      objectReference: {fileID: -894648141231607399, guid: 3130c9a480ef6d14fbfac72fabd3fea4,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

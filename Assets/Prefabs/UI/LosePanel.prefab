@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=orange>M</color>ENU
+  m_text: <color=orange>M</color><color=#333360>ENU</color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fddd6c6a7f14e844787a006d9679e68c, type: 2}
   m_sharedMaterial: {fileID: -7514445890676427378, guid: fddd6c6a7f14e844787a006d9679e68c,
@@ -212,8 +212,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284494643
-  m_fontColor: {r: 0.2011392, g: 0.20176923, b: 0.3773585, a: 1}
+    rgba: 4289218632
+  m_fontColor: {r: 0.28284088, g: 0.28284088, b: 0.6603774, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -284,9 +284,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4259158804780605365}
   - component: {fileID: 7081716140388042775}
-  - component: {fileID: 4905615506181148943}
   - component: {fileID: 753861619082693132}
   - component: {fileID: 1887638140858994051}
+  - component: {fileID: 8993058820299569673}
   m_Layer: 0
   m_Name: Retry
   m_TagString: Untagged
@@ -322,36 +322,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3388879352283488247}
   m_CullTransparentMesh: 1
---- !u!114 &4905615506181148943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3388879352283488247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &753861619082693132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,7 +362,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 4905615506181148943}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -420,6 +390,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd535cd7f3664b40aa8dc14c54674f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8993058820299569673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388879352283488247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d56f40236ddf7479aeb67991e6364f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonText: {fileID: 3346299841920501264}
+  OriginalText: <color=red>R</color><color=#4F7B37>ETRY</color>
+  HoveredText: <color=#710000>R</color><color=#1F5600>ETRY</color>
+  ClickedText: <color=#C06060>R</color><color=#69D384>ETRY</color>
 --- !u!1 &3552036272852368645
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,9 +730,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3704110124916259740}
   - component: {fileID: 778464327917494776}
-  - component: {fileID: 655368780401762186}
   - component: {fileID: 2258869032288253272}
   - component: {fileID: 8992403012255688953}
+  - component: {fileID: 4752533943222265909}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -782,36 +768,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6484031055903278163}
   m_CullTransparentMesh: 1
---- !u!114 &655368780401762186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6484031055903278163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &2258869032288253272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,7 +808,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 655368780401762186}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -880,6 +836,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd535cd7f3664b40aa8dc14c54674f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4752533943222265909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6484031055903278163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d56f40236ddf7479aeb67991e6364f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonText: {fileID: 5646883625183210327}
+  OriginalText: <color=#008080>Q</color><color=#9F1614>UIT</color> <color=#008080>G</color><color=#9F1614>AME</color>
+  HoveredText: <color=#005050>Q</color><color=#5E0200>UIT</color> <color=#005050>G</color><color=#5E0200>AME</color>
+  ClickedText: <color=#69A1B1>Q</color><color=#B67571>UIT</color> <color=#69A1B1>G</color><color=#B67571>AME</color>
 --- !u!1 &7684849072149925681
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=red>R</color>ETRY
+  m_text: <color=red>R</color><color=#4F7B37>ETRY</color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fddd6c6a7f14e844787a006d9679e68c, type: 2}
   m_sharedMaterial: {fileID: -7514445890676427378, guid: fddd6c6a7f14e844787a006d9679e68c,
@@ -955,8 +927,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281826127
-  m_fontColor: {r: 0.30992535, g: 0.4811321, b: 0.21560164, a: 1}
+    rgba: 4286829417
+  m_fontColor: {r: 0.41008896, g: 0.82641506, b: 0.5147204, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1027,9 +999,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6471121380323440947}
   - component: {fileID: 3009360828766573740}
-  - component: {fileID: 1632611119785952366}
   - component: {fileID: 7596873312248431538}
   - component: {fileID: 6579979396236928470}
+  - component: {fileID: 5939726891709739588}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -1065,36 +1037,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8489007748017310276}
   m_CullTransparentMesh: 1
---- !u!114 &1632611119785952366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489007748017310276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &7596873312248431538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,7 +1077,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1632611119785952366}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1163,3 +1105,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd535cd7f3664b40aa8dc14c54674f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5939726891709739588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489007748017310276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d56f40236ddf7479aeb67991e6364f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonText: {fileID: 432427611669589670}
+  OriginalText: <color=orange>M</color><color=#333360>ENU</color>
+  HoveredText: <color=#966204>M</color><color=#000045>ENU</color>
+  ClickedText: <color=#FFC962>M</color><color=#4949A9>ENU</color>

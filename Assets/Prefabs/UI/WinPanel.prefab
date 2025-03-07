@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7677228202022054667}
   - component: {fileID: 4461692590238795110}
-  - component: {fileID: 3452125091302139263}
   - component: {fileID: 2172646965431167600}
   - component: {fileID: 582648978843405640}
+  - component: {fileID: 546804249148916479}
   m_Layer: 0
   m_Name: Continue
   m_TagString: Untagged
@@ -48,36 +48,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913689152583251560}
   m_CullTransparentMesh: 1
---- !u!114 &3452125091302139263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913689152583251560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &2172646965431167600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +88,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3452125091302139263}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -146,6 +116,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd535cd7f3664b40aa8dc14c54674f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &546804249148916479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913689152583251560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d56f40236ddf7479aeb67991e6364f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonText: {fileID: 2418511026239228652}
+  OriginalText: <color=red>N</color><color=#4F7B37>EXT</color> <color=red>L</color><color=#4F7B37>EVEL</color>
+  HoveredText: <color=#710000>N</color><color=#1F5600>EXT</color> <color=#710000>L</color><color=#1F5600>EVEL</color>
+  ClickedText: <color=#C06060>N</color><color=#69D384>EXT</color> <color=#C06060>L</color><color=#69D384>EVEL</color>
 --- !u!1 &1450410787717317283
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,9 +351,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7203467730302908456}
   - component: {fileID: 3594604261224495386}
-  - component: {fileID: 1122296608281705459}
   - component: {fileID: 597326723399644551}
   - component: {fileID: 7892212611993331182}
+  - component: {fileID: 7262183820394608169}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -403,36 +389,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4108665152805458786}
   m_CullTransparentMesh: 1
---- !u!114 &1122296608281705459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4108665152805458786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &597326723399644551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +429,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1122296608281705459}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -501,6 +457,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd535cd7f3664b40aa8dc14c54674f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7262183820394608169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108665152805458786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d56f40236ddf7479aeb67991e6364f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonText: {fileID: 5848566195702640691}
+  OriginalText: <color=#008080>Q</color><color=#9F1614>UIT</color> <color=#008080>G</color><color=#9F1614>AME</color>
+  HoveredText: <color=#005050>Q</color><color=#5E0200>UIT</color> <color=#005050>G</color><color=#5E0200>AME</color>
+  ClickedText: <color=#69A1B1>Q</color><color=#B67571>UIT</color> <color=#69A1B1>G</color><color=#B67571>AME</color>
 --- !u!1 &4747174058302548014
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,9 +861,9 @@ GameObject:
   m_Component:
   - component: {fileID: 221191244052063079}
   - component: {fileID: 8751351089290318484}
-  - component: {fileID: 8673637832875149968}
   - component: {fileID: 1378162115388728294}
   - component: {fileID: 7883946827277065705}
+  - component: {fileID: 2057976333441490641}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -927,36 +899,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6414026211023225153}
   m_CullTransparentMesh: 1
---- !u!114 &8673637832875149968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6414026211023225153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &1378162115388728294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,7 +939,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 8673637832875149968}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1025,6 +967,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd535cd7f3664b40aa8dc14c54674f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2057976333441490641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6414026211023225153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d56f40236ddf7479aeb67991e6364f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonText: {fileID: 5248898174695120271}
+  OriginalText: <color=orange>M</color><color=#333360>ENU</color>
+  HoveredText: <color=#966204>M</color><color=#000045>ENU</color>
+  ClickedText: <color=#FFC962>M</color><color=#4949A9>ENU</color>
 --- !u!1 &7812925993438935132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,7 +1048,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=red>N</color>EXT <color=red>L</color>EVEL
+  m_text: <color=red>N</color><color=#4F7B37>EXT</color> <color=red>L</color><color=#4F7B37>EVEL</color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fddd6c6a7f14e844787a006d9679e68c, type: 2}
   m_sharedMaterial: {fileID: -7514445890676427378, guid: fddd6c6a7f14e844787a006d9679e68c,

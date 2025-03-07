@@ -8,11 +8,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject GameModeSelection,LevelSelection,Game;
     [SerializeField] private int ClassicLevelCount=4;
     [SerializeField] private bool[] isLevelAvailable;
-    private int LevelNumber=1;
+    private int LevelNumber=1,CurrentLevel=-1;
 
     //GETTERS
 
         public bool GetisLevelAvailable(int index){return isLevelAvailable[index];}//Getter For isLevelAvailable
+        public int GetCurrentLevel(){return CurrentLevel;}//Getter For CurrentLevel
 
     //SETTERS
 
@@ -80,6 +81,7 @@ public class LevelManager : MonoBehaviour
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Arcade);
         UIManager.instance.DisplayGameUI(true);
         UIManager.instance.SetLevelDisplay("Stage :",LevelNumber.ToString());
+        UIManager.instance.UpdateScoreDisplay(0);
 
     }
 
@@ -115,6 +117,8 @@ public class LevelManager : MonoBehaviour
                     UIManager.instance.HideAll();
 
                 }
+
+                CurrentLevel++;
                 
 
             break;
@@ -163,6 +167,9 @@ public class LevelManager : MonoBehaviour
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Classic);
         UIManager.instance.DisplayGameUI(true);
         UIManager.instance.SetLevelDisplay("Level :",(LevelNumber+1).ToString());
+        UIManager.instance.UpdateScoreDisplay(0);
+        CurrentLevel=LevelNumber;
 
     }
+
 }

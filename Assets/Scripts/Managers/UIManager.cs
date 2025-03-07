@@ -16,15 +16,16 @@ public class UIManager : MonoBehaviour
         [SerializeField] private GameObject LosePanelPrefab;
         [SerializeField] private GameObject StartPanelPrefab;
         [SerializeField] private ScoreBoard ScoreBoardPrefab;
-        [SerializeField] private GameObject ScoreRecordPrefab;
+        [SerializeField] private ScoreRecord ScoreRecordPrefab;
         [SerializeField] private GameUI GameUIPrefab;
 
     [Header("UI Datas")]
     [Space(10)]
 
-        private GameObject MenuWindow,WinPanel,LosePanel,StartPanel,ScoreRecord;
+        private GameObject MenuWindow,WinPanel,LosePanel,StartPanel;
         private GameUI GameUIDisplay;
         private ScoreBoard ScoreBoardDisplay;
+        private ScoreRecord ScoreRecordDisplay;
         private bool isWindowOpen=false;
 
     //GETTERS
@@ -181,14 +182,21 @@ public class UIManager : MonoBehaviour
     public void DisplayScoreRecord(bool isDisplay)
     {
 
-        if(ScoreRecord==null)
+        if(ScoreRecordDisplay==null)
         {
 
-            ScoreRecord=Instantiate(ScoreRecordPrefab,UIParent);
+            ScoreRecordDisplay=Instantiate(ScoreRecordPrefab,UIParent);
 
         }
 
-        ScoreRecord.gameObject.SetActive(isDisplay);
+        ScoreRecordDisplay.gameObject.SetActive(isDisplay);
+
+    }
+
+    public void SetScoreRecord()
+    {
+
+        //
 
     }
 

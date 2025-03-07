@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -68,14 +67,24 @@ public class SceneLoader : MonoBehaviour
             {
 
                 case GameManager.GameMode.Classic :
+
+                    UIManager.instance.HideAll();
+                    LevelManager.instance.GoToLevel(LevelManager.instance.GetCurrentLevel());
                 
                 break;
 
                 case GameManager.GameMode.Arcade :
 
+                    UIManager.instance.DisplayScoreRecord(true);
+                    UIManager.instance.SetScoreRecord();
+                    UIManager.instance.HideAll();
+                    LevelManager.instance.LaunchArcadeMode();
+
                 break;
 
                 default :
+
+                    Debug.Log("This Game Mode Doesn't Exist Yet");
 
                 break;
 
