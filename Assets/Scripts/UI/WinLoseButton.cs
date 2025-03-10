@@ -5,39 +5,40 @@ using UnityEngine.EventSystems;
 public class WinLoseButton : MonoBehaviour, IPointerEnterHandler, IPointerUpHandler, IPointerDownHandler, IPointerExitHandler
 {
     
-    [SerializeField] private TextMeshProUGUI ButtonText;
-    [SerializeField] private string OriginalText,HoveredText,ClickedText;
+    [Header("Components")]
+    [Space(10)]
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
+        [SerializeField] private TextMeshProUGUI ButtonText;
+        [SerializeField] private string OriginalText,HoveredText,ClickedText;
 
-        ButtonText.text=HoveredText;
-        Debug.Log("Entered");
+    //ON POINTER EVENTS
 
-    }
+        public void OnPointerEnter(PointerEventData eventData)
+        {
 
-    public void OnPointerDown(PointerEventData eventData)
-    {
+            ButtonText.text=HoveredText;
 
-        ButtonText.text=ClickedText;
-        Debug.Log("Clicked");
+        }
 
-    }
+        public void OnPointerDown(PointerEventData eventData)
+        {
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
+            ButtonText.text=ClickedText;
 
-        ButtonText.text=HoveredText;
-        Debug.Log("Released");
+        }
 
-    }
+        public void OnPointerUp(PointerEventData eventData)
+        {
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
+            ButtonText.text=HoveredText;
 
-        ButtonText.text=OriginalText;
-        Debug.Log("Leaved");
+        }
 
-    }
+        public void OnPointerExit(PointerEventData eventData)
+        {
+
+            ButtonText.text=OriginalText;
+
+        }
 
 }
