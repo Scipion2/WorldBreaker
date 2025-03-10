@@ -4,38 +4,69 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
 
+    [Header("Scene Names")]
+    [Space(10)]
+
+        public const string GameMode="GameMode";
+        public const string ClassicSelect="ClassicSelection";
+        public const string Arcade="Arcade";
+        public const string Classic="Classic";
+        public const string Menu="Menu";
+        public const string Settings="Settings";
+        public const string Credits="Credits";
+
+
     //SCENE SELECTOR
 
         public void GoToGame()
         {
 
-            SceneManager.LoadScene("Game");
-            if(LevelManager.instance!=null)
-                LevelManager.instance.DisplayGameModeSelection();
+            SceneManager.LoadScene(GameMode);
+
+        }
+
+        public void GoToClassic()
+        {
+
+            SceneManager.LoadScene(ClassicSelect);
+
+        }
+
+        public void GoToArcade()
+        {
+
+            SceneManager.LoadScene(Arcade);
+
+        }
+
+        public void GoToClassicGame()
+        {
+
+            SceneManager.LoadScene(Classic);
 
         }
 
         public void GoToMenu()
         {
 
-            SceneManager.LoadScene("Menu");
-            HideGame();
+            SceneManager.LoadScene(Menu);
+            HideUI();
 
         }
 
         public void GoToSettings()
         {
 
-            SceneManager.LoadScene("Settings");
-            HideGame();
+            SceneManager.LoadScene(Settings);
+            HideUI();
 
         }
 
         public void GoToCredits()
         {
 
-            SceneManager.LoadScene("Credits");
-            HideGame();
+            SceneManager.LoadScene(Credits);
+            HideUI();
 
         }
 
@@ -45,6 +76,9 @@ public class SceneLoader : MonoBehaviour
             Application.Quit();
 
         }
+
+
+    //DATA MODIFIERS
 
         public void Save()
         {
@@ -68,7 +102,7 @@ public class SceneLoader : MonoBehaviour
 
                 case GameManager.GameMode.Classic :
 
-                    UIManager.instance.HideAll();
+                    UIManager.instance.HideUI();
                     LevelManager.instance.GoToLevel(LevelManager.instance.GetCurrentLevel());
                 
                 break;
@@ -77,7 +111,7 @@ public class SceneLoader : MonoBehaviour
 
                     UIManager.instance.DisplayScoreRecord(true);
                     UIManager.instance.SetScoreRecord();
-                    UIManager.instance.HideAll();
+                    UIManager.instance.HideUI();
                     LevelManager.instance.LaunchArcadeMode();
 
                 break;
@@ -99,10 +133,10 @@ public class SceneLoader : MonoBehaviour
 
         }
 
-        private void HideGame()
+        private void HideUI()
         {
 
-            UIManager.instance.HideAll();
+            UIManager.instance.HideUI();
 
             if(LevelManager.instance!=null)
             {

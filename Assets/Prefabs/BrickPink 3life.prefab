@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -148,9 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
-  scoreValue: 20
+  reward: {fileID: 0}
   litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
   unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
+  lives: 3
+  scoreValue: 20
   isBreakable: 1

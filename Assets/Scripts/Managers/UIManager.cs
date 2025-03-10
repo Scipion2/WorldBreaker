@@ -68,11 +68,10 @@ public class UIManager : MonoBehaviour
 
         }
 
-    public void HideAll()
+    public void HideUI()
     {
 
         DisplayLosePanel(false);
-        DisplayWinPanel(false);
         DisplayWinPanel(false);
         DisplayGameUI(false);
 

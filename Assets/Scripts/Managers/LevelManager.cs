@@ -5,7 +5,8 @@ public class LevelManager : MonoBehaviour
 {
     
     [SerializeField] private Spawner LevelGenerator;
-    [SerializeField] private GameObject GameModeSelection,LevelSelection,Game;
+    [SerializeField] private GameObject GamePrefab;
+    private GameObject Game;
     [SerializeField] private int ClassicLevelCount=4;
     [SerializeField] private bool[] isLevelAvailable;
     private int LevelNumber=1,CurrentLevel=-1;
@@ -39,9 +40,7 @@ public class LevelManager : MonoBehaviour
     public void Start()
     {
 
-        GameModeSelection.gameObject.SetActive(true);
-        LevelSelection.gameObject.SetActive(false);
-        Game.gameObject.SetActive(false);
+        DisplayGame(false);
         isLevelAvailable=new bool[ClassicLevelCount];
         isLevelAvailable[0]=true;
         for(int i=1;i<ClassicLevelCount;++i)
@@ -53,19 +52,12 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void DisplayGameModeSelection()
-    {
-
-        GameModeSelection.gameObject.SetActive(true);
-
-    }
 
     public void ResetDisplay()
     {
 
-        GameModeSelection.gameObject.SetActive(false);
-        LevelSelection.gameObject.SetActive(false);
-        Game.gameObject.SetActive(false);
+
+        DisplayGame(false);
 
     }
 
@@ -73,8 +65,7 @@ public class LevelManager : MonoBehaviour
     public void LaunchArcadeMode()
     {
 
-        GameModeSelection.gameObject.SetActive(false);
-        Game.gameObject.SetActive(true);
+        DisplayGame(true);
         LevelNumber=1;
         SpawnLevel(Spawner.Difficulty.Easy);
         GameManager.instance.ResetGame(5);
@@ -114,7 +105,7 @@ public class LevelManager : MonoBehaviour
 
                     SceneManager.LoadScene("Credits");
                     ResetDisplay();
-                    UIManager.instance.HideAll();
+                    UIManager.instance.HideUI();
 
                 }
 
@@ -148,20 +139,22 @@ public class LevelManager : MonoBehaviour
     }
 
 
-    public void DisplayLevelSelection()
+    public void DisplayGame(bool isDisplay)
     {
 
-        LevelSelection.gameObject.SetActive(true);
-        GameModeSelection.gameObject.SetActive(false);
+        if(Game == null)
+            Game=Instantiate(GamePrefab);
+
+        Game.gameObject.SetActive(isDisplay);
 
     }
 
     public void GoToLevel(int LevelNumber)
     {
 
-        LevelSelection.gameObject.SetActive(false);
-        Game.gameObject.SetActive(true);
+        DisplayGame(true);
         string LevelName = "Level "+LevelNumber.ToString();
+        SceneManager.LoadScene("Classic");
         SceneManager.LoadScene(LevelName,LoadSceneMode.Additive);
         GameManager.instance.ResetGame(3);
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Classic);

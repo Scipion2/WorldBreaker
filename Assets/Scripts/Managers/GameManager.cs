@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     //SETTERS
 
         public void SetCurrentGameMode(GameMode SRC){CurrentGameMode=SRC;}//Setter For CurrentGameMode
+        public void SetPadle(Transform src){PadleTransform=src;}//Setter For PadleTransform
 
     //ESSENTIALS
 

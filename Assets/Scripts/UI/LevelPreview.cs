@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelPreview : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class LevelPreview : MonoBehaviour
     public void GoToLevel()
     {
 
+        SceneManager.LoadScene("Classic");
         LevelManager.instance.GoToLevel(LevelNumber);
 
     }
