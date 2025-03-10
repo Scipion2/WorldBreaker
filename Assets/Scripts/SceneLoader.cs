@@ -70,6 +70,13 @@ public class SceneLoader : MonoBehaviour
 
         }
 
+        public void GoToNextLevel()
+        {
+
+            LevelManager.instance.NextStage(GameManager.instance.GetCurrentGameMode());
+
+        }
+
         public void Quit()
         {
 
@@ -123,13 +130,6 @@ public class SceneLoader : MonoBehaviour
                 break;
 
             }
-
-        }
-
-        public void GoToNextLevel()
-        {
-
-            LevelManager.instance.NextStage(GameManager.instance.GetCurrentGameMode());
 
         }
 
