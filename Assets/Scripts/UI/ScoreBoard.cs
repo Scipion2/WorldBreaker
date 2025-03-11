@@ -6,20 +6,27 @@ public class ScoreBoard : MonoBehaviour
 {
 
     [SerializeField] private Transform BodyPanel;
-    [SerializeField] private GameData ScoreLists;
     [SerializeField] private ScoreLine ScoreLinePrefab;
     private List<ScoreLine> Scores=new List<ScoreLine>();
 
     public void Start()
     {
 
-        Debug.Log(ScoreLists.Players.Count);
+       UpdateScore();
 
-        for(int LineCount=0;LineCount<ScoreLists.Players.Count;++LineCount)
+    }
+
+    public void UpdateScore()
+    {
+
+        DataManager.instance.UpdateData();
+        int LineCount=DataManager.instance.GetScoreCount();
+
+        for(int i=0;i<LineCount;++i)
         {
 
             ScoreLine Temp=Instantiate(ScoreLinePrefab,BodyPanel);
-            Temp.SetScoreLine(ScoreLists.Players[LineCount],ScoreLists.PlayerScores[LineCount].ToString(),ScoreLists.PlayerStages[LineCount].ToString());
+            Temp.SetScoreLine(DataManager.instance.GetPlayer(i),DataManager.instance.GetScore(i).ToString(),DataManager.instance.GetStage(i).ToString());
             Scores.Add(Temp);
 
         }

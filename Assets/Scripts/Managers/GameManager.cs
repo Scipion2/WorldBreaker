@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
         public Transform GetPadleTransform(){return PadleTransform;}//Getter For PadleTransform
         public int GetLives(){return Lives;}//Getter For Lives
         public GameMode GetCurrentGameMode(){return CurrentGameMode;}//Getter For CurrentGameMode
+        public int GetScore(){return Score;}//Getter For Score
 
     //SETTERS
 
@@ -91,19 +92,12 @@ public class GameManager : MonoBehaviour
 
             }
 
-            if(Input.GetKeyUp(KeyCode.O))
-            {
-
-                Debug.Log("Trop Fort");
-                WinLevel();
-
-            }
-
             if(Input.GetKeyUp(KeyCode.I))
             {
 
                 BrickManager.instance.ClearLevel();
                 RegisterBreak(0,null);
+                IncreaseScore(Random.Range(1,1000));
 
             }
 
@@ -117,12 +111,20 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame(int LivesCount) 
     {
-        // Show instruction panel
-        UIManager.instance.DisplayStartPanel(true);
 
         Lives=LivesCount;
+
+    }
+
+    public void LaunchGame()
+    {
+
+        // Show instruction panel
+        UIManager.instance.DisplayStartPanel(true);
+        
         // Start game after delay
         Invoke("StartGame", startDelay);
+        
     }
 
     private void StartGame() 

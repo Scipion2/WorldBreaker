@@ -25,6 +25,7 @@ public class LevelPreview : MonoBehaviour
 
         SceneManager.LoadScene("Classic");
         LevelManager.instance.GoToLevel(LevelNumber);
+        GameManager.instance.LaunchGame();
 
     }
 

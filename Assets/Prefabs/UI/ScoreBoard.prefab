@@ -867,6 +867,9 @@ MonoBehaviour:
   imageToModify: {fileID: 1313590132858761696}
   textToModify: {fileID: 0}
   spriteToModify: {fileID: 0}
+  Red: 0
+  Blue: 0
+  Green: 0
 --- !u!1 &5549843377421225364 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2692139538396059518, guid: bdaa11e608e9b684a833c10b449fbe17,
@@ -888,6 +891,9 @@ MonoBehaviour:
   imageToModify: {fileID: 2481398214323027554}
   textToModify: {fileID: 0}
   spriteToModify: {fileID: 0}
+  Red: 0
+  Blue: 0
+  Green: 0
 --- !u!114 &6103484745728784151 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4389470912457698813, guid: bdaa11e608e9b684a833c10b449fbe17,
@@ -921,3 +927,6 @@ MonoBehaviour:
   imageToModify: {fileID: 6103484745728784151}
   textToModify: {fileID: 0}
   spriteToModify: {fileID: 0}
+  Red: 0
+  Blue: 0
+  Green: 0

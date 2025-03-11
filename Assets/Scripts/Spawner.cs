@@ -12,6 +12,13 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int EASY_X_ORIGIN=0,EASY_X_MAX=0,EASY_Y_ORIGIN=0,EASY_Y_MAX=0,MEDIUM_X_ORIGIN=0,MEDIUM_X_MAX=0,MEDIUM_Y_ORIGIN=0,MEDIUM_Y_MAX=0,HARD_X_ORIGIN=0,HARD_X_MAX=0,HARD_Y_ORIGIN=0,HARD_Y_MAX=0;
 
 
+    public Difficulty GetDifficulty()
+    {
+
+        return Difficulty.Easy;
+
+    }
+
     public void SetDifficulty(Difficulty DifficultyToApply)
     {
 

@@ -36,6 +36,7 @@ public class SceneLoader : MonoBehaviour
         {
 
             SceneManager.LoadScene(Arcade);
+            LevelManager.instance.LaunchArcadeMode();
 
         }
 
@@ -49,8 +50,30 @@ public class SceneLoader : MonoBehaviour
         public void GoToMenu()
         {
 
-            SceneManager.LoadScene(Menu);
-            HideUI();
+            switch(GameManager.instance.GetCurrentGameMode())
+            {
+
+                case GameManager.GameMode.Classic :
+
+                    SceneManager.LoadScene(Menu);
+                    HideUI();
+                break;
+
+                case GameManager.GameMode.Arcade :
+
+                    UIManager.instance.DisplayScoreRecord(true);
+                    UIManager.instance.SetScoreRecord();
+                    UIManager.instance.HideUI();
+                    SceneManager.LoadScene(Menu);
+
+                break;
+
+                default :
+                break;
+
+            }
+
+            
 
         }
 

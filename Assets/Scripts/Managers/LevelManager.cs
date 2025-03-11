@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     //SETTERS
 
         public void InitCurrentLevel(){CurrentLevel=-1;}//Setter To Reset CurrentLevel
-        public void SetisLevelAvailable(bool value){isLevelAvailable[CurrentLevel]=value;}
+        public void SetisLevelAvailable(bool value){isLevelAvailable[CurrentLevel+1]=value;}
 
 
     public static LevelManager instance;
@@ -65,26 +65,29 @@ public class LevelManager : MonoBehaviour
     public void LaunchArcadeMode()
     {
 
+        GameManager.instance.LaunchGame();
         DisplayGame(true);
         CurrentLevel=1;
-        SpawnLevel(Spawner.Difficulty.Easy);
+        SpawnLevel(LevelGenerator.GetDifficulty());
         GameManager.instance.ResetGame(5);
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Arcade);
         UIManager.instance.DisplayGameUI(true);
-        UIManager.instance.SetLevelDisplay("Stage :",CurrentLevel.ToString());
+        UIManager.instance.SetLevelDisplay("Stage :",(CurrentLevel+1).ToString());
         UIManager.instance.UpdateScoreDisplay(0);
 
     }
 
-    public void NextStage(GameManager.GameMode Current)
+    public void NextStage(GameManager.GameMode CurrentGameMode)
     {
 
-        switch(Current)
+        CurrentLevel++;
+
+        switch(CurrentGameMode)
         {
 
             case GameManager.GameMode.Arcade :
 
-                UIManager.instance.SetLevelDisplay("Stage :",CurrentLevel.ToString());
+                UIManager.instance.SetLevelDisplay("Stage :",(CurrentLevel+1).ToString());
                 LevelGenerator.SpawnMap();
                 GameManager.instance.IncreaseLives();
 
@@ -96,10 +99,9 @@ public class LevelManager : MonoBehaviour
                 if(CurrentLevel<ClassicLevelCount)
                 {
 
-                    CurrentLevel++;
                     GameManager.instance.ResetGame(3);
                     GoToLevel(CurrentLevel);
-                    UIManager.instance.SetLevelDisplay("Level :",CurrentLevel.ToString());
+                    UIManager.instance.SetLevelDisplay("Level :",(CurrentLevel+1).ToString());
 
                 }else
                 {
@@ -126,8 +128,6 @@ public class LevelManager : MonoBehaviour
 
 
         UIManager.instance.DisplayWinPanel(false);
-        CurrentLevel++;
-
         
 
     }
@@ -151,19 +151,18 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void GoToLevel(int CurrentLevel)
+    public void GoToLevel(int LevelToGo)
     {
 
+        CurrentLevel=LevelToGo;
         DisplayGame(true);
-        string LevelName = "Level "+CurrentLevel.ToString();
         SceneManager.LoadScene("Classic");
-        SceneManager.LoadScene(LevelName,LoadSceneMode.Additive);
+        SceneManager.LoadScene("Level "+CurrentLevel,LoadSceneMode.Additive);
         GameManager.instance.ResetGame(3);
         GameManager.instance.SetCurrentGameMode(GameManager.GameMode.Classic);
         UIManager.instance.DisplayGameUI(true);
         UIManager.instance.SetLevelDisplay("Level :",(CurrentLevel+1).ToString());
         UIManager.instance.UpdateScoreDisplay(0);
-        CurrentLevel=CurrentLevel;
 
     }
 
