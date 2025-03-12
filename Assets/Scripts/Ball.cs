@@ -17,7 +17,8 @@ public class Ball : MonoBehaviour
     [Space(10)]
 
         public float launchSpeed = 1.0f;
-        public float maxSpeed = 100f;
+        public float maxSpeed = 255f;
+        public float BallSize=0.2f;
 
     [Header("Audio Data")]
     [Space(10)]
@@ -77,6 +78,7 @@ public class Ball : MonoBehaviour
                 hitAudio.clip = hitSounds[randomNumber];
                 hitAudio.Play();
             }
+
         }
 
     //GAME'S UTIL
@@ -108,7 +110,10 @@ public class Ball : MonoBehaviour
 
                 needKickOff = true;
                 body.simulated=false;
-                ballRenderer.color=new Color((float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,(float)Random.Range(0,100)/100,1f);
+                ballRenderer.color=new Color((float)Random.Range(0,255)/255,(float)Random.Range(0,255)/255,(float)Random.Range(0,255)/255,1f);
+                Transform padle=GameManager.instance.GetPadleTransform();
+                this.transform.position=new Vector3(padle.position.x,padle.position.y+BallSize,padle.position.z);
+                this.transform.SetParent(padle);
 
             }
                 

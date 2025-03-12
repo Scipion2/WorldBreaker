@@ -150,6 +150,11 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.007267952
       objectReference: {fileID: 0}
+    - target: {fileID: 882101804181956573, guid: 8d68a86ea6efe794994c096a8abf528f,
+        type: 3}
+      propertyPath: m_TagString
+      value: LeftWall
+      objectReference: {fileID: 0}
     - target: {fileID: 882101804181956575, guid: 8d68a86ea6efe794994c096a8abf528f,
         type: 3}
       propertyPath: m_Size.y
@@ -164,6 +169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 882101804541349049, guid: 8d68a86ea6efe794994c096a8abf528f,
+        type: 3}
+      propertyPath: m_TagString
+      value: RightWall
       objectReference: {fileID: 0}
     - target: {fileID: 882101804541349051, guid: 8d68a86ea6efe794994c096a8abf528f,
         type: 3}

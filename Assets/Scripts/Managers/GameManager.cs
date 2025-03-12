@@ -105,9 +105,6 @@ public class GameManager : MonoBehaviour
 
     //
 
-    public void SaveData()
-    {}
-
 
     public void ResetGame(int LivesCount) 
     {
@@ -174,6 +171,7 @@ public class GameManager : MonoBehaviour
         UIManager.instance.UpdateScoreDisplay(Score);
     }
 
+
     void WinLevel() 
     {
         isAbleToPlay = CurrentGameMode==GameMode.Arcade ? true : false;
@@ -182,8 +180,19 @@ public class GameManager : MonoBehaviour
         CurrentBall.ResetBall();
 
         if(CurrentGameMode==GameMode.Classic)
-            LevelManager.instance.SetisLevelAvailable(true);
+        {
 
+            LevelManager.instance.SetisLevelAvailable(true);
+            for(int i=0;i<PlayerBalls.Count;++i)
+            {
+
+                Destroy(PlayerBalls[i].gameObject);
+
+            }
+
+            PlayerBalls.Clear();
+
+        }
 
         if (winSound)
         {
@@ -202,6 +211,19 @@ public class GameManager : MonoBehaviour
 
         Lives++;
         PlayerBalls.Add(Instantiate(BallPrefab,new Vector2(BallTankOrigin.position.x+BallSpacing*PlayerBalls.Count,BallTankOrigin.position.y),Quaternion.identity,BallTankOrigin));
+
+    }
+
+    public void IncreaseLives(int LiveQuantity)
+    {
+
+        Lives+=LiveQuantity;
+        for(int i=0;i<LiveQuantity;++i)
+        {
+
+            PlayerBalls.Add(Instantiate(BallPrefab,new Vector2(BallTankOrigin.position.x+BallSpacing*PlayerBalls.Count,BallTankOrigin.position.y),Quaternion.identity,BallTankOrigin));
+
+        }
 
     }
 
@@ -246,6 +268,7 @@ public class GameManager : MonoBehaviour
         }
         UIManager.instance.DisplayLosePanel(true);
         PadleTransform.position=new Vector3(0,-4,0);
+        BrickManager.instance.ClearLevel();
     }
 
 }

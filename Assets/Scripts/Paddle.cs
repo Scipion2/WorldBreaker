@@ -16,7 +16,8 @@ public class Paddle : MonoBehaviour
     [Space(10)]
 
         private float horizontal;
-        [SerializeField] private float speed = 1.0f,AnglePower=10f;        
+        [SerializeField] private float speed = 1.0f,AnglePower=10f; 
+        public bool isMovingRight=true;       
 
     //GETTERS
 
@@ -39,6 +40,18 @@ public class Paddle : MonoBehaviour
                 this.transform.Translate(new Vector3(horizontal*speed*Time.fixedDeltaTime,0,0));
 
             }
+
+            if(isMovingRight)
+            {
+
+                this.transform.Translate(Vector3.right*speed*Time.fixedDeltaTime);
+
+            }else
+            {
+
+                this.transform.Translate(-Vector3.right*speed*Time.fixedDeltaTime);
+
+            }
             
         }
 
@@ -51,7 +64,14 @@ public class Paddle : MonoBehaviour
                 float angle=Vector2.SignedAngle(this.transform.position,other.gameObject.transform.position);
                 other.rigidbody.AddForce(Vector2.right*angle*AnglePower);
 
-            }else Debug.Log("WTF");
+            }else if(other!=null && other.gameObject.tag=="LeftWall")
+            {
+                isMovingRight=true;
+            }else if(other!=null && other.gameObject.tag=="RightWall")
+            {
+                isMovingRight=false;
+            }
+
 
         }
 

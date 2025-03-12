@@ -8,6 +8,8 @@ TagManager:
   - NormalBrick
   - DuplicateBrick
   - SpawnBrick
+  - RightWall
+  - LeftWall
   layers:
   - Default
   - TransparentFX

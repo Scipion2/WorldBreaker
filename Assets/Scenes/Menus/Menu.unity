@@ -660,12 +660,12 @@ PrefabInstance:
     - target: {fileID: 4783127338420465418, guid: d035cf7479f486e4a981bd2aa08ee992,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -516
       objectReference: {fileID: 0}
     - target: {fileID: 4783127338420465418, guid: d035cf7479f486e4a981bd2aa08ee992,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -286
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -781,6 +781,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1514917048321504425, guid: b9fcaacc6c20b6942946d69981cfd996,
+        type: 3}
+      propertyPath: BrickWidth
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3248935407768450391, guid: b9fcaacc6c20b6942946d69981cfd996,
         type: 3}
       propertyPath: m_Name
@@ -1113,9 +1118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8604dae1c138f4797cb0794af53657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scores: 
-  Stages: 
-  Players: []
   ScoreNumber: 0
 --- !u!4 &1045591635
 Transform:

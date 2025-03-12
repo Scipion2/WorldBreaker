@@ -113,7 +113,7 @@ public class SceneLoader : MonoBehaviour
         public void Save()
         {
             
-            GameManager.instance.SaveData();
+            UIManager.instance.DisplayScoreRecord(true);
 
         }
 

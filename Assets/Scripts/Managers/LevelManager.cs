@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
     
     [SerializeField] private Spawner LevelGenerator;
     [SerializeField] private GameObject GamePrefab;
-    private GameObject Game;
+    [SerializeField] private GameObject Game;
     [SerializeField] private int ClassicLevelCount=4;
     [SerializeField] private bool[] isLevelAvailable;
     private int CurrentLevel=-1;
@@ -41,6 +41,7 @@ public class LevelManager : MonoBehaviour
     {
 
         DisplayGame(false);
+        Game.transform.SetParent(this.transform);
         isLevelAvailable=new bool[ClassicLevelCount];
         isLevelAvailable[0]=true;
         for(int i=1;i<ClassicLevelCount;++i)
@@ -89,7 +90,7 @@ public class LevelManager : MonoBehaviour
 
                 UIManager.instance.SetLevelDisplay("Stage :",(CurrentLevel+1).ToString());
                 LevelGenerator.SpawnMap();
-                GameManager.instance.IncreaseLives();
+                GameManager.instance.IncreaseLives(3);
 
             break;
 
@@ -144,10 +145,16 @@ public class LevelManager : MonoBehaviour
     public void DisplayGame(bool isDisplay)
     {
 
-        if(Game == null)
+        Debug.Log(Game);
+
+        if(Game==null)
             Game=Instantiate(GamePrefab);
 
+        Debug.Log(Game);
+
         Game.gameObject.SetActive(isDisplay);
+
+        Debug.Log("here");
 
     }
 

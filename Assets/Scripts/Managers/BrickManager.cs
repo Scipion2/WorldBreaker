@@ -76,7 +76,7 @@ public class BrickManager : MonoBehaviour
 
         //LevelBricks.Remove(BrickToRemove);
         if(BrickToRemove!=null)
-            Object.DestroyImmediate(BrickToRemove.gameObject);
+            Object.Destroy(BrickToRemove.gameObject);
 
     }
 
