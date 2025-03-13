@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e32d485cab549e348bbe19f752a0b315
+timeCreated: 1468834385
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 46415
+  packageName: Customizable Metal Substance
+  packageVersion: 1.2
+  assetPath: Assets/Impactit/Example Scene/Prefabs/RustyPainted.prefab
+  uploadId: 135740

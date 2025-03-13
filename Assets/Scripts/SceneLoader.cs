@@ -73,6 +73,8 @@ public class SceneLoader : MonoBehaviour
 
             }
 
+            LevelManager.instance.CloseGame();
+
             
 
         }

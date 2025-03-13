@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour
     [Header("Components")]
     [Space(10)]
 
-        [SerializeField] private Sprite[] sprites;
+        [SerializeField] private Material[] BallMaterials;
         [SerializeField] private SpriteRenderer ballRenderer;
         [SerializeField] private AudioSource hitAudio;
         [SerializeField] private Rigidbody2D body; 
@@ -110,13 +110,20 @@ public class Ball : MonoBehaviour
 
                 needKickOff = true;
                 body.simulated=false;
-                ballRenderer.color=new Color((float)Random.Range(0,255)/255,(float)Random.Range(0,255)/255,(float)Random.Range(0,255)/255,1f);
+                ballRenderer.material=GetBallMaterial();
                 Transform padle=GameManager.instance.GetPadleTransform();
                 this.transform.position=new Vector3(padle.position.x,padle.position.y+BallSize,padle.position.z);
                 this.transform.SetParent(padle);
 
             }
                 
+        }
+
+        public Material GetBallMaterial()
+        {
+
+            return BallMaterials[Random.Range(0,BallMaterials.Length)];
+
         }
 
 }

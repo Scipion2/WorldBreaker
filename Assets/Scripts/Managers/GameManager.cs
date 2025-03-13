@@ -171,6 +171,19 @@ public class GameManager : MonoBehaviour
         UIManager.instance.UpdateScoreDisplay(Score);
     }
 
+    public void ClearBalls()
+    {
+
+        for(int i=0;i<PlayerBalls.Count;++i)
+        {
+
+            Destroy(PlayerBalls[i].gameObject);
+
+        }
+
+        PlayerBalls.Clear();
+
+    }
 
     void WinLevel() 
     {
@@ -183,14 +196,7 @@ public class GameManager : MonoBehaviour
         {
 
             LevelManager.instance.SetisLevelAvailable(true);
-            for(int i=0;i<PlayerBalls.Count;++i)
-            {
-
-                Destroy(PlayerBalls[i].gameObject);
-
-            }
-
-            PlayerBalls.Clear();
+            ClearBalls();
 
         }
 

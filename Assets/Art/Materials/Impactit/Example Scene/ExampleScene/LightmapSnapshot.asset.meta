@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 30b45c89e1d561f40ab46e5ead0a9773
+timeCreated: 1473066469
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 46415
+  packageName: Customizable Metal Substance
+  packageVersion: 1.2
+  assetPath: Assets/Impactit/Example Scene/ExampleScene/LightmapSnapshot.asset
+  uploadId: 135740

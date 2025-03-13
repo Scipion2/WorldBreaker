@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 737c1f19637b92c4888b5f0ce6e4ac77
+timeCreated: 1468834379
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 46415
+  packageName: Customizable Metal Substance
+  packageVersion: 1.2
+  assetPath: Assets/Impactit/Example Scene/Prefabs/Gold.prefab
+  uploadId: 135740

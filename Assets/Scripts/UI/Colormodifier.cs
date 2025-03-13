@@ -6,7 +6,7 @@ public class Colormodifier : MonoBehaviour
 {
     
     [SerializeField] private Image imageToModify;
-    [SerializeField] private TextMeshPro textToModify;
+    [SerializeField] private TextMeshProUGUI textToModify;
     [SerializeField] private SpriteRenderer spriteToModify;
     private Color currentColor;
     [SerializeField] [Range(0,255)] private float Red,Blue,Green;

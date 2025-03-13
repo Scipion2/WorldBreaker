@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2214382518561003326}
   - component: {fileID: 2214382518561003314}
   - component: {fileID: 2214382518561003315}
+  - component: {fileID: 3799193822148313312}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -80,15 +81,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3345604596107148701, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 2169969835429308328, guid: 62a773453266c1941b851c873077b56a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.24, y: 0.24}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
+  m_Size: {x: 0.23, y: 0.23}
+  m_AdaptiveModeThreshold: 1
+  m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
@@ -167,20 +168,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2a737a9637ea645a5ef8ce6ff6469c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 3345604596107148701, guid: bf837ff28a5f41941b6147275ff2f11f, type: 3}
-  - {fileID: 7609730426921878769, guid: bf837ff28a5f41941b6147275ff2f11f, type: 3}
-  - {fileID: 4311155686539474808, guid: bf837ff28a5f41941b6147275ff2f11f, type: 3}
+  BallMaterials:
+  - {fileID: 2100000, guid: e215ca915ffdb4f4eb2f86878198c121, type: 2}
+  - {fileID: 2100000, guid: 8b52bf9c1a52a7940bbbc071cf298df1, type: 2}
+  - {fileID: 2100000, guid: 3355be88350ce154aa0e8f3900c5135f, type: 2}
+  - {fileID: 2100000, guid: dc3aea73cc227044a9ff31d7c9fc85cd, type: 2}
+  - {fileID: 2100000, guid: 33dfbdc9ebfda2c4eb31575d437f8a79, type: 2}
+  - {fileID: 2100000, guid: 2ef1ff88967c6a947bae1fa027c548a8, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   ballRenderer: {fileID: 2214382518561003324}
+  hitAudio: {fileID: 2214382518561003315}
+  body: {fileID: 2214382518561003326}
   launchSpeed: 14
   maxSpeed: 100
-  hitAudio: {fileID: 2214382518561003315}
+  BallSize: 0.2
   hitSounds:
   - {fileID: 8300000, guid: ef7506809e3539d44a20483e1af5ac99, type: 3}
   - {fileID: 8300000, guid: fa57c107a07945240aa8058254c25db6, type: 3}
   - {fileID: 8300000, guid: 14609d4558f80784e8213deb1e6c9caf, type: 3}
   kickSound: {fileID: 8300000, guid: e68a995f9a128d5449d957896e78a089, type: 3}
-  body: {fileID: 2214382518561003326}
 --- !u!82 &2214382518561003315
 AudioSource:
   m_ObjectHideFlags: 0
@@ -278,3 +284,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3799193822148313312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2214382518561003321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7bbf559b0244d468c7c0b79c3bad27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageToModify: {fileID: 0}
+  textToModify: {fileID: 0}
+  spriteToModify: {fileID: 2214382518561003324}
+  Red: 0
+  Blue: 0
+  Green: 0

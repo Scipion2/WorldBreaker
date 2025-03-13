@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     //SETTERS
 
         public void InitCurrentLevel(){CurrentLevel=-1;}//Setter To Reset CurrentLevel
-        public void SetisLevelAvailable(bool value){isLevelAvailable[CurrentLevel+1]=value;}
+        public void SetisLevelAvailable(bool value){isLevelAvailable[CurrentLevel+1]=value; if(value){DataManager.instance.SaveClassicLevel(CurrentLevel+1);}}
 
 
     public static LevelManager instance;
@@ -47,7 +47,7 @@ public class LevelManager : MonoBehaviour
         for(int i=1;i<ClassicLevelCount;++i)
         {
 
-            isLevelAvailable[i]=false;
+            isLevelAvailable[i]=DataManager.instance.GetClassicLimit()<i ? false : true;
 
         }
 
@@ -75,6 +75,15 @@ public class LevelManager : MonoBehaviour
         UIManager.instance.DisplayGameUI(true);
         UIManager.instance.SetLevelDisplay("Stage :",(CurrentLevel+1).ToString());
         UIManager.instance.UpdateScoreDisplay(0);
+
+    }
+
+    public void CloseGame()
+    {
+
+        DisplayGame(false);
+        BrickManager.instance.ClearLevel();
+        GameManager.instance.ClearBalls();
 
     }
 
@@ -145,16 +154,10 @@ public class LevelManager : MonoBehaviour
     public void DisplayGame(bool isDisplay)
     {
 
-        Debug.Log(Game);
-
         if(Game==null)
             Game=Instantiate(GamePrefab);
 
-        Debug.Log(Game);
-
         Game.gameObject.SetActive(isDisplay);
-
-        Debug.Log("here");
 
     }
 

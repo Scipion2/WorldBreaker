@@ -79,13 +79,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7250548680220842617, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: -6488999444478349403, guid: 119195ae723e5b34c8562ecaec9e30d4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1.28, y: 0.24}
+  m_Size: {x: 1.3, y: 0.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1646badb869f2ca43b57eb2bb1c0cb83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paddle: {fileID: 3437203877151265324}
   speed: 500
   AnglePower: 10
-  paddle: {fileID: 3437203877151265324}
-  ActiveBall: {fileID: 0}
+  isMovingRight: 1

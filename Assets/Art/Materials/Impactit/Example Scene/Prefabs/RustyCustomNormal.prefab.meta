@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df1ce85660f1dbf429af4eae4ef70bcb
+timeCreated: 1468834383
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 46415
+  packageName: Customizable Metal Substance
+  packageVersion: 1.2
+  assetPath: Assets/Impactit/Example Scene/Prefabs/RustyCustomNormal.prefab
+  uploadId: 135740

@@ -657,6 +657,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1434801170968177260, guid: d035cf7479f486e4a981bd2aa08ee992,
+        type: 3}
+      propertyPath: BallPrefab
+      value: 
+      objectReference: {fileID: 2214382518561003314, guid: 15c546bf7a8bf444a88f799c37d4bf0d,
+        type: 3}
+    - target: {fileID: 1434801170968177260, guid: d035cf7479f486e4a981bd2aa08ee992,
+        type: 3}
+      propertyPath: CurrentBall
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4783127338420465418, guid: d035cf7479f486e4a981bd2aa08ee992,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1119,6 +1130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreNumber: 0
+  MaxClassicLevel: 0
 --- !u!4 &1045591635
 Transform:
   m_ObjectHideFlags: 0
@@ -2384,8 +2396,8 @@ SceneRoots:
   - {fileID: 859895485}
   - {fileID: 1537231889}
   - {fileID: 1792804333}
+  - {fileID: 1045591635}
   - {fileID: 7027133589668612373}
   - {fileID: 7226211614045647707}
   - {fileID: 538062812}
   - {fileID: 638991156}
-  - {fileID: 1045591635}

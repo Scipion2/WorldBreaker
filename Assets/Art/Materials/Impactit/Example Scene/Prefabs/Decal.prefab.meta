@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 76fdd468d76a16a46b5a5b2235f1a9d9
+timeCreated: 1468834381
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 46415
+  packageName: Customizable Metal Substance
+  packageVersion: 1.2
+  assetPath: Assets/Impactit/Example Scene/Prefabs/Decal.prefab
+  uploadId: 135740

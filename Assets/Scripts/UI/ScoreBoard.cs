@@ -12,7 +12,26 @@ public class ScoreBoard : MonoBehaviour
     public void Start()
     {
 
-       UpdateScore();
+        ClearScore();
+        UpdateScore();
+
+    }
+
+    public void OnEnable()
+    {
+
+        ClearScore();
+        UpdateScore();
+
+    }
+
+    public void ClearScore()
+    {
+
+        for(int i=0;i<Scores.Count;++i)
+            DestroyImmediate(Scores[i].gameObject);
+
+        Scores.Clear();
 
     }
 
@@ -21,6 +40,10 @@ public class ScoreBoard : MonoBehaviour
 
         DataManager.instance.UpdateData();
         int LineCount=DataManager.instance.GetScoreCount();
+        for(int i=0;i<Scores.Count;++i)
+            DestroyImmediate(Scores[i].gameObject);
+
+        Scores.Clear();
 
         for(int i=0;i<LineCount;++i)
         {
