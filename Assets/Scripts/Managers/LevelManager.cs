@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject Game;
     [SerializeField] private int ClassicLevelCount=4;
     [SerializeField] private bool[] isLevelAvailable;
+    private int EasyMaxScore=1000,MediumMaxScore=3000,HardMaxScore=500;
     private int CurrentLevel=-1;
 
     //GETTERS
@@ -98,6 +99,33 @@ public class LevelManager : MonoBehaviour
             case GameManager.GameMode.Arcade :
 
                 UIManager.instance.SetLevelDisplay("Stage :",(CurrentLevel+1).ToString());
+
+                if(GameManager.instance.GetScore()>HardMaxScore)
+                {
+
+                    Debug.Log("XtremMode");
+                    LevelGenerator.SetDifficulty(Spawner.Difficulty.Extreme);
+
+                }else if(GameManager.instance.GetScore()>MediumMaxScore)
+                {
+
+                    Debug.Log("HardMode");
+                    LevelGenerator.SetDifficulty(Spawner.Difficulty.Hard);
+
+                }else if(GameManager.instance.GetScore()>EasyMaxScore)
+                {
+
+                    Debug.Log("MediumMode");
+                    LevelGenerator.SetDifficulty(Spawner.Difficulty.Medium);
+
+                }else
+                {
+
+                    Debug.Log("EasyMode");
+                    LevelGenerator.SetDifficulty(Spawner.Difficulty.Easy);
+
+                }
+
                 LevelGenerator.SpawnMap();
                 GameManager.instance.IncreaseLives(3);
 

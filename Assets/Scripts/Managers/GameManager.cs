@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     
     [Header("Game Datas")]
     [Space(10)]
-        private int Score=0;
+        [SerializeField] private int Score=0;
         private int Lives=3;
         private bool isAbleToPlay=false;
         [SerializeField] private float startDelay;
@@ -188,7 +188,7 @@ public class GameManager : MonoBehaviour
     void WinLevel() 
     {
         isAbleToPlay = CurrentGameMode==GameMode.Arcade ? true : false;
-        CurrentBall.transform.position=new Vector2(PadleTransform.position.x,PadleTransform.position.y+0.2f);
+        CurrentBall.transform.position=new Vector2(PadleTransform.position.x,PadleTransform.position.y/*+0.2f*/);
         CurrentBall.transform.parent=PadleTransform;
         CurrentBall.ResetBall();
 

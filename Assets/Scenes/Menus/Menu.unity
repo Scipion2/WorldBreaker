@@ -797,6 +797,26 @@ PrefabInstance:
       propertyPath: BrickWidth
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 1514917048321504425, guid: b9fcaacc6c20b6942946d69981cfd996,
+        type: 3}
+      propertyPath: EXTREME_X_MAX
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514917048321504425, guid: b9fcaacc6c20b6942946d69981cfd996,
+        type: 3}
+      propertyPath: EXTREME_Y_MAX
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514917048321504425, guid: b9fcaacc6c20b6942946d69981cfd996,
+        type: 3}
+      propertyPath: EXTREME_X_ORIGIN
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514917048321504425, guid: b9fcaacc6c20b6942946d69981cfd996,
+        type: 3}
+      propertyPath: EXTREME_Y_ORIGIN
+      value: -6
+      objectReference: {fileID: 0}
     - target: {fileID: 3248935407768450391, guid: b9fcaacc6c20b6942946d69981cfd996,
         type: 3}
       propertyPath: m_Name
@@ -2307,12 +2327,12 @@ PrefabInstance:
     - target: {fileID: 5241233511967169108, guid: 5dc2e50277790ea40a584563a899bcf2,
         type: 3}
       propertyPath: 'RewardSpawnWeigth.Array.data[0]'
-      value: 0.8
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5241233511967169108, guid: 5dc2e50277790ea40a584563a899bcf2,
         type: 3}
       propertyPath: 'RewardSpawnWeigth.Array.data[1]'
-      value: 0.2
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5241233511967169108, guid: 5dc2e50277790ea40a584563a899bcf2,
         type: 3}

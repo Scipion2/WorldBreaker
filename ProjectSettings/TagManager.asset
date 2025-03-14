@@ -10,6 +10,7 @@ TagManager:
   - SpawnBrick
   - RightWall
   - LeftWall
+  - MultiBall
   layers:
   - Default
   - TransparentFX

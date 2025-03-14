@@ -8,14 +8,18 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float BrickWidth,BrickHeigth;
     [Range(0f, 1f)][SerializeField] private float SpawnRate;
     [SerializeField] private Transform Parent;
-    [SerializeField] public enum Difficulty{Easy,Medium,Hard}
-    [SerializeField] private int EASY_X_ORIGIN=0,EASY_X_MAX=0,EASY_Y_ORIGIN=0,EASY_Y_MAX=0,MEDIUM_X_ORIGIN=0,MEDIUM_X_MAX=0,MEDIUM_Y_ORIGIN=0,MEDIUM_Y_MAX=0,HARD_X_ORIGIN=0,HARD_X_MAX=0,HARD_Y_ORIGIN=0,HARD_Y_MAX=0;
+    [SerializeField] public enum Difficulty{Easy,Medium,Hard,Extreme}
+    private Difficulty CurrentDifficulty=Difficulty.Easy;
+    [SerializeField] private int    EASY_X_ORIGIN=0,EASY_X_MAX=0,EASY_Y_ORIGIN=0,EASY_Y_MAX=0,
+                                    MEDIUM_X_ORIGIN=0,MEDIUM_X_MAX=0,MEDIUM_Y_ORIGIN=0,MEDIUM_Y_MAX=0,
+                                    HARD_X_ORIGIN=0,HARD_X_MAX=0,HARD_Y_ORIGIN=0,HARD_Y_MAX=0,
+                                    EXTREME_X_ORIGIN=0,EXTREME_X_MAX=0,EXTREME_Y_ORIGIN=0,EXTREME_Y_MAX=0;
 
 
     public Difficulty GetDifficulty()
     {
 
-        return Difficulty.Easy;
+        return CurrentDifficulty;
 
     }
 
@@ -49,8 +53,20 @@ public class Spawner : MonoBehaviour
                     X_Max=HARD_X_MAX;
                     Y_Origin=HARD_Y_ORIGIN;
                     Y_Max=HARD_Y_MAX;
+                    SpawnRate=0.5f;
 
                 break;
+
+            case Difficulty.Extreme :
+
+                    Debug.Log("Here");
+                    X_Origin=EXTREME_X_ORIGIN;
+                    X_Max=EXTREME_X_MAX;
+                    Y_Origin=EXTREME_Y_ORIGIN;
+                    Y_Max=EXTREME_Y_MAX;
+                    SpawnRate=0.7f;
+
+            break;
 
             default :
                 break;
@@ -83,6 +99,9 @@ public class Spawner : MonoBehaviour
 
         }
 
+        if(BrickManager.instance.isEmpty())
+            SpawnMap();
+
     }
 
     [ContextMenu("Spawn Quantity")]
@@ -90,8 +109,6 @@ public class Spawner : MonoBehaviour
     {
 
         BrickManager.instance.ClearLevel();
-        Debug.Log("Spawned by quantity");
-
         for(int i=0;i<NumberOfBricksToSpawn;)
         {
 
@@ -126,7 +143,6 @@ public class Spawner : MonoBehaviour
     {
 
         BrickManager.instance.ClearLevel();
-        Debug.Log("Spawned by mirror");
 
         for(int x=-Mathf.Abs(X_Origin-X_Max)/2;x<0;++x)
         {
@@ -157,7 +173,6 @@ public class Spawner : MonoBehaviour
     {
 
          BrickManager.instance.ClearLevel();
-         Debug.Log("Spawned by doble mirror");
 
         for(int x=-Mathf.Abs(X_Origin-X_Max)/2;x<0;++x)
         {
@@ -190,8 +205,6 @@ public class Spawner : MonoBehaviour
     {
 
         BrickManager.instance.ClearLevel();
-        Debug.Log("Spawned by random");
-
         for(int x=X_Origin;x<X_Max;++x)
         {
 

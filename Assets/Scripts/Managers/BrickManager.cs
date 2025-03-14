@@ -14,7 +14,7 @@ public class BrickManager : MonoBehaviour
 
     //GETTERS
 
-        public bool isEmpty(){return LevelBricks.Count!=0 ? false : true;}
+        public bool isEmpty(){Debug.Log(LevelBricks.Count); return false;}//return LevelBricks.Count!=0 ? false : true;}
 
     public static BrickManager instance;
     private void Awake()

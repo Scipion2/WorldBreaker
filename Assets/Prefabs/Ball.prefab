@@ -179,6 +179,7 @@ MonoBehaviour:
   ballRenderer: {fileID: 2214382518561003324}
   hitAudio: {fileID: 2214382518561003315}
   body: {fileID: 2214382518561003326}
+  ballPrefab: {fileID: 2214382518561003314}
   launchSpeed: 14
   maxSpeed: 100
   BallSize: 0.2

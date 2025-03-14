@@ -9,17 +9,18 @@ public class Brick : MonoBehaviour
 
         private Ball ball;
         [SerializeField] private Reward reward;
-
+        
     [Header("Graphics Components")]
     [Space(10)]
 
-        [SerializeField] private Material litBrick;
-        [SerializeField] private Material unlitBrick;
+        [SerializeField] private SpriteRenderer BrickSpriteRenderer;
+        [SerializeField] private Sprite[] BreakSprites;
 
     [Header("Game Data")]
     [Space(10)]
 
-        [Range(1, 3)] [SerializeField] private int lives = 1;
+        [Range(1, 6)] [SerializeField] private int lives = 1;
+        private int MaxLives=5;
         [SerializeField] private int scoreValue = 10;
         [SerializeField] private bool isBreakable=true; 
 
@@ -32,6 +33,9 @@ public class Brick : MonoBehaviour
             
             if(isBreakable)
                 reward=BrickManager.instance.GetReward();
+
+            SetLives();
+            ChangeSprite();
 
         }
 
@@ -56,9 +60,11 @@ public class Brick : MonoBehaviour
                     DestroyBrick();
                 }
                 // Change from bright to normal material. Swapping materials allows not to instantiate a new material by modyfying it
-                else if (unlitBrick)
+                else
                 {
-                    this.GetComponent<SpriteRenderer>().material = unlitBrick;
+
+                    ChangeSprite();
+
                 }
             }
         }
@@ -68,6 +74,26 @@ public class Brick : MonoBehaviour
         void DestroyBrick() 
         {
             Destroy(this.gameObject);
+        }
+
+        public void ChangeSprite()
+        {
+
+            if(isBreakable && lives<=BreakSprites.Length)
+            {
+
+                BrickSpriteRenderer.sprite=BreakSprites[BreakSprites.Length-lives];
+
+            }
+
+        }
+
+        public void SetLives()
+        {
+
+            if(lives!=1)
+                lives=Random.Range(2,MaxLives);
+
         }
 
 }

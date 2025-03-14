@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  litBrick: {fileID: 2100000, guid: 66f72c3f1ba8abb418249cc4413ede3f, type: 2}
-  unlitBrick: {fileID: 2100000, guid: 66f72c3f1ba8abb418249cc4413ede3f, type: 2}
+  BrickSpriteRenderer: {fileID: 5871188179863211401}
+  BreakSprites: []
   lives: 1
   scoreValue: 10
   isBreakable: 0

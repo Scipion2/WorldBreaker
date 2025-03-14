@@ -11,6 +11,7 @@ public class Paddle : MonoBehaviour
     [Space(10)]
 
         [SerializeField] private Rigidbody2D paddle;
+        Vector2 ScreenBounds;
 
     [Header("Game Datas")]
     [Space(10)]
@@ -32,6 +33,8 @@ public class Paddle : MonoBehaviour
 
         void FixedUpdate() // Physics callback
         {
+
+            ScreenBounds=Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height,Camera.main.transform.position.z));
             // Check if game is on
             if (GameManager.instance.GetIsAbleToPlay())
             {
@@ -41,18 +44,17 @@ public class Paddle : MonoBehaviour
 
             }
 
-            if(isMovingRight)
-            {
-
-                this.transform.Translate(Vector3.right*speed*Time.fixedDeltaTime);
-
-            }else
-            {
-
-                this.transform.Translate(-Vector3.right*speed*Time.fixedDeltaTime);
-
-            }
             
+            
+        }
+
+        void LateUpdate()
+        {
+
+            Vector3 Temp=transform.position;
+            Temp.x=Mathf.Clamp(Temp.x, -ScreenBounds.x, ScreenBounds.x);
+            transform.position=Temp;
+
         }
 
         void OnCollisionEnter2D(Collision2D other) // Called if this collided with another collider
@@ -64,14 +66,7 @@ public class Paddle : MonoBehaviour
                 float angle=Vector2.SignedAngle(this.transform.position,other.gameObject.transform.position);
                 other.rigidbody.AddForce(Vector2.right*angle*AnglePower);
 
-            }else if(other!=null && other.gameObject.tag=="LeftWall")
-            {
-                isMovingRight=true;
-            }else if(other!=null && other.gameObject.tag=="RightWall")
-            {
-                isMovingRight=false;
             }
-
 
         }
 

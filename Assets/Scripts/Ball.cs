@@ -12,6 +12,7 @@ public class Ball : MonoBehaviour
         [SerializeField] private SpriteRenderer ballRenderer;
         [SerializeField] private AudioSource hitAudio;
         [SerializeField] private Rigidbody2D body; 
+        [SerializeField] private Ball ballPrefab;
 
     [Header("Physics Data")]
     [Space(10)]
@@ -31,6 +32,8 @@ public class Ball : MonoBehaviour
 
         private bool needKickOff = true;
         private bool isActiveBall=false;
+        private int numberOfBalls=2;
+        private float splitAngle=15f;
 
 
     //SETTERS
@@ -42,6 +45,7 @@ public class Ball : MonoBehaviour
         {
 
             body.simulated=false;
+            //numberOfBalls=Random.Range(2,6);
 
         }
     
@@ -78,6 +82,25 @@ public class Ball : MonoBehaviour
                 hitAudio.clip = hitSounds[randomNumber];
                 hitAudio.Play();
             }
+
+            /*if(other!=null && other.gameObject.tag=="MultiBall")
+            {
+
+                for (int i = 0; i < numberOfBalls; i++)
+                {
+                    // Calculer l'angle de direction pour chaque balle
+                    float angle = i  * splitAngle - (splitAngle * (numberOfBalls - 1) / 2);
+                    Vector2 direction = new Vector2(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle));
+                    
+                    Ball newball = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+                    newball.GetComponent<Rigidbody2D>().linearVelocity = direction * 5f; // Vitesse de la balle (ajuste selon ton besoin)
+                }
+
+                // Détruire la balle actuelle après qu'elle ait cassé la brique
+                //GameManager.instance.PlayerBalls.Remove(this);
+                Destroy(gameObject);
+
+            }*/
 
         }
 
