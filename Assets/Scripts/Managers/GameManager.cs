@@ -110,6 +110,20 @@ public class GameManager : MonoBehaviour
     {
 
         Lives=LivesCount;
+        StartGame();
+
+    }
+
+    public void SetTankLives(int LivesCount)
+    {
+
+        for(int i=0;i<Lives;++i)
+        {
+
+            Ball temp=Instantiate(BallPrefab,new Vector2(BallTankOrigin.position.x+BallSpacing*i,BallTankOrigin.position.y),Quaternion.identity,BallTankOrigin);
+            PlayerBalls.Add(temp);
+
+        }
 
     }
 
@@ -129,16 +143,15 @@ public class GameManager : MonoBehaviour
         isAbleToPlay = true;
         UIManager.instance.DisplayStartPanel(false);
 
-        for(int i=0;i<Lives;++i)
-        {
+        SetTankLives(Lives);
 
-            PlayerBalls.Add(Instantiate(BallPrefab,new Vector2(BallTankOrigin.position.x+BallSpacing*i,BallTankOrigin.position.y),Quaternion.identity,BallTankOrigin));
+        if(CurrentBall==null)
+            CurrentBall=Instantiate(BallPrefab,new Vector2(PadleTransform.position.x-0.01f,PadleTransform.position.y+0.2f),Quaternion.identity,PadleTransform);
 
-        }
 
-        CurrentBall=Instantiate(BallPrefab,new Vector2(PadleTransform.position.x,PadleTransform.position.y+0.2f),Quaternion.identity,PadleTransform);
+        CurrentBall.transform.position=new Vector2(PadleTransform.position.x-0.01f,PadleTransform.position.y+0.2f);
+        CurrentBall.transform.SetParent(PadleTransform);        
         CurrentBall.SetActiveBall();
-        
 
     }
 
@@ -188,7 +201,7 @@ public class GameManager : MonoBehaviour
     void WinLevel() 
     {
         isAbleToPlay = CurrentGameMode==GameMode.Arcade ? true : false;
-        CurrentBall.transform.position=new Vector2(PadleTransform.position.x,PadleTransform.position.y/*+0.2f*/);
+        CurrentBall.transform.position=new Vector2(PadleTransform.position.x-0.01f,PadleTransform.position.y+0.2f);
         CurrentBall.transform.parent=PadleTransform;
         CurrentBall.ResetBall();
 
@@ -216,8 +229,8 @@ public class GameManager : MonoBehaviour
     {
 
         Lives++;
-        PlayerBalls.Add(Instantiate(BallPrefab,new Vector2(BallTankOrigin.position.x+BallSpacing*PlayerBalls.Count,BallTankOrigin.position.y),Quaternion.identity,BallTankOrigin));
-
+        SetTankLives(1);
+        
     }
 
     public void IncreaseLives(int LiveQuantity)

@@ -114,8 +114,28 @@ public class SceneLoader : MonoBehaviour
 
         public void Save()
         {
+
+            switch(GameManager.instance.GetCurrentGameMode())
+            {
+
+                case GameManager.GameMode.Classic :
+
+
+                    break;
+
+                case GameManager.GameMode.Arcade :
+
+                    UIManager.instance.DisplayScoreRecord(true);
+
+                    break;
+
+                default :
+
+                    break;
+
+            }
             
-            UIManager.instance.DisplayScoreRecord(true);
+            
 
         }
 

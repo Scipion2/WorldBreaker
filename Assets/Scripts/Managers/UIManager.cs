@@ -26,11 +26,17 @@ public class UIManager : MonoBehaviour
         private GameUI GameUIDisplay;
         private ScoreBoard ScoreBoardDisplay;
         private ScoreRecord ScoreRecordDisplay;
+        private ClassicBackground ClassicBackSprite;
         private bool isWindowOpen=false;
 
     //GETTERS
 
         public bool GetisWindowOpen(){return isWindowOpen;}//Getter For isWindowOpen
+
+    //SETTERS
+
+        public void SetClassicBackground(ClassicBackground src){ClassicBackSprite=src;}//Setter For ClassicBackSprite
+        public void SetClassicBackgroundSprite(int index){ClassicBackSprite.SetImage(index);}
 
     //ESSENTIALS
 

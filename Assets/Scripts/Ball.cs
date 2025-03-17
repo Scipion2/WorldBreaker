@@ -13,6 +13,8 @@ public class Ball : MonoBehaviour
         [SerializeField] private AudioSource hitAudio;
         [SerializeField] private Rigidbody2D body; 
         [SerializeField] private Ball ballPrefab;
+        [SerializeField] public Colormodifier ColorBall;
+        [SerializeField] private float AnglePower=10f;
 
     [Header("Physics Data")]
     [Space(10)]
@@ -81,6 +83,14 @@ public class Ball : MonoBehaviour
                 int randomNumber = Random.Range(0, hitSounds.Length);
                 hitAudio.clip = hitSounds[randomNumber];
                 hitAudio.Play();
+            }
+
+            if(other!=null)
+            {
+
+                float angle=Vector2.SignedAngle(this.transform.position,other.gameObject.transform.position);
+                body.AddForce(Vector2.right*angle*AnglePower);
+
             }
 
             /*if(other!=null && other.gameObject.tag=="MultiBall")

@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 4429623}
   - component: {fileID: 4429622}
   - component: {fileID: 4429621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 4429623}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -206,10 +211,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -239,7 +244,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,16 +265,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &86414827
@@ -284,7 +289,7 @@ GameObject:
   - component: {fileID: 86414831}
   - component: {fileID: 86414830}
   - component: {fileID: 86414829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +324,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 86414831}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -359,10 +369,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -392,7 +402,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -413,16 +423,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &118279288
@@ -437,7 +447,7 @@ GameObject:
   - component: {fileID: 118279292}
   - component: {fileID: 118279291}
   - component: {fileID: 118279290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +482,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 118279292}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -512,10 +527,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -545,7 +560,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -566,16 +581,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &123971535
@@ -590,7 +605,7 @@ GameObject:
   - component: {fileID: 123971539}
   - component: {fileID: 123971538}
   - component: {fileID: 123971537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +640,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 123971539}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
   isBreakable: 1
@@ -665,10 +685,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -698,7 +718,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -719,16 +739,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &129146252
@@ -743,7 +763,7 @@ GameObject:
   - component: {fileID: 129146256}
   - component: {fileID: 129146255}
   - component: {fileID: 129146254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,7 +798,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 129146256}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -818,10 +843,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -851,7 +876,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -872,16 +897,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &164543425
@@ -896,7 +921,7 @@ GameObject:
   - component: {fileID: 164543429}
   - component: {fileID: 164543428}
   - component: {fileID: 164543427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,7 +956,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 164543429}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -971,10 +1001,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1004,7 +1034,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1025,16 +1055,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &187862899
@@ -1049,7 +1079,7 @@ GameObject:
   - component: {fileID: 187862903}
   - component: {fileID: 187862902}
   - component: {fileID: 187862901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1114,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 187862903}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -1124,10 +1159,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1157,7 +1192,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1178,16 +1213,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &189643305
@@ -1202,7 +1237,7 @@ GameObject:
   - component: {fileID: 189643309}
   - component: {fileID: 189643308}
   - component: {fileID: 189643307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1237,7 +1272,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 189643309}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -1277,10 +1317,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1310,7 +1350,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1331,16 +1371,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &202646700
@@ -1355,7 +1395,7 @@ GameObject:
   - component: {fileID: 202646704}
   - component: {fileID: 202646703}
   - component: {fileID: 202646702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1430,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 202646704}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -1430,10 +1475,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1463,7 +1508,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1484,16 +1529,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &251640395
@@ -1508,7 +1553,7 @@ GameObject:
   - component: {fileID: 251640399}
   - component: {fileID: 251640398}
   - component: {fileID: 251640397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1543,7 +1588,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 251640399}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -1583,10 +1633,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1616,7 +1666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1637,16 +1687,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &258349955
@@ -1661,7 +1711,7 @@ GameObject:
   - component: {fileID: 258349959}
   - component: {fileID: 258349958}
   - component: {fileID: 258349957}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1696,7 +1746,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 258349959}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -1736,10 +1791,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1769,7 +1824,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1790,16 +1845,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &273971023
@@ -1814,7 +1869,7 @@ GameObject:
   - component: {fileID: 273971027}
   - component: {fileID: 273971026}
   - component: {fileID: 273971025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1849,7 +1904,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 273971027}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -1889,10 +1949,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1922,7 +1982,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1943,16 +2003,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &297173660
@@ -1967,7 +2027,7 @@ GameObject:
   - component: {fileID: 297173664}
   - component: {fileID: 297173663}
   - component: {fileID: 297173662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2002,7 +2062,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 297173664}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -2042,10 +2107,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2075,7 +2140,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2096,16 +2161,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &343658146
@@ -2120,7 +2185,7 @@ GameObject:
   - component: {fileID: 343658150}
   - component: {fileID: 343658149}
   - component: {fileID: 343658148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2220,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 343658150}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -2195,10 +2265,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2228,7 +2298,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2249,16 +2319,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &363355208
@@ -2273,7 +2343,7 @@ GameObject:
   - component: {fileID: 363355212}
   - component: {fileID: 363355211}
   - component: {fileID: 363355210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2308,7 +2378,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 363355212}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -2348,10 +2423,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2381,7 +2456,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2402,16 +2477,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &379258221
@@ -2426,7 +2501,7 @@ GameObject:
   - component: {fileID: 379258225}
   - component: {fileID: 379258224}
   - component: {fileID: 379258223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2461,7 +2536,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 379258225}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -2501,10 +2581,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2534,7 +2614,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2555,16 +2635,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &380461459
@@ -2579,7 +2659,7 @@ GameObject:
   - component: {fileID: 380461463}
   - component: {fileID: 380461462}
   - component: {fileID: 380461461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2614,7 +2694,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 380461463}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -2654,10 +2739,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2687,7 +2772,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2708,16 +2793,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &399381120
@@ -2732,7 +2817,7 @@ GameObject:
   - component: {fileID: 399381124}
   - component: {fileID: 399381123}
   - component: {fileID: 399381122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2767,7 +2852,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 399381124}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -2807,10 +2897,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2840,7 +2930,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2861,16 +2951,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &406748556
@@ -2885,7 +2975,7 @@ GameObject:
   - component: {fileID: 406748560}
   - component: {fileID: 406748559}
   - component: {fileID: 406748558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2920,7 +3010,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 406748560}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
   isBreakable: 1
@@ -2960,10 +3055,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2993,7 +3088,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3014,16 +3109,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &414064132
@@ -3038,7 +3133,7 @@ GameObject:
   - component: {fileID: 414064136}
   - component: {fileID: 414064135}
   - component: {fileID: 414064134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3073,7 +3168,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 414064136}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -3113,10 +3213,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3146,7 +3246,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3167,16 +3267,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &464171671
@@ -3191,7 +3291,7 @@ GameObject:
   - component: {fileID: 464171675}
   - component: {fileID: 464171674}
   - component: {fileID: 464171673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3226,7 +3326,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 464171675}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -3266,10 +3371,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3299,7 +3404,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3320,16 +3425,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &473166003
@@ -3344,7 +3449,7 @@ GameObject:
   - component: {fileID: 473166007}
   - component: {fileID: 473166006}
   - component: {fileID: 473166005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3379,7 +3484,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 473166007}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -3419,10 +3529,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3452,7 +3562,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3473,16 +3583,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &480212783
@@ -3497,7 +3607,7 @@ GameObject:
   - component: {fileID: 480212787}
   - component: {fileID: 480212786}
   - component: {fileID: 480212785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3532,7 +3642,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 480212787}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -3572,10 +3687,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3605,7 +3720,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 7415e73aef92d564da5f6e277274f12c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3626,16 +3741,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &495496112
@@ -3650,7 +3765,7 @@ GameObject:
   - component: {fileID: 495496116}
   - component: {fileID: 495496115}
   - component: {fileID: 495496114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3685,7 +3800,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 495496116}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -3725,10 +3845,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3758,7 +3878,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3779,16 +3899,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &525402571
@@ -3803,7 +3923,7 @@ GameObject:
   - component: {fileID: 525402575}
   - component: {fileID: 525402574}
   - component: {fileID: 525402573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3838,7 +3958,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 525402575}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -3878,10 +4003,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3911,7 +4036,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3932,16 +4057,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &534279622
@@ -3956,7 +4081,7 @@ GameObject:
   - component: {fileID: 534279626}
   - component: {fileID: 534279625}
   - component: {fileID: 534279624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3991,7 +4116,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 534279626}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -4031,10 +4161,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4064,7 +4194,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4085,16 +4215,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &557338399
@@ -4109,7 +4239,7 @@ GameObject:
   - component: {fileID: 557338403}
   - component: {fileID: 557338402}
   - component: {fileID: 557338401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4144,7 +4274,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 557338403}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -4184,10 +4319,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4217,7 +4352,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4238,16 +4373,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &557525119
@@ -4262,7 +4397,7 @@ GameObject:
   - component: {fileID: 557525123}
   - component: {fileID: 557525122}
   - component: {fileID: 557525121}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4297,7 +4432,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 557525123}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -4337,10 +4477,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4370,7 +4510,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4391,16 +4531,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &600624532
@@ -4415,7 +4555,7 @@ GameObject:
   - component: {fileID: 600624536}
   - component: {fileID: 600624535}
   - component: {fileID: 600624534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4450,7 +4590,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 600624536}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -4490,10 +4635,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4523,7 +4668,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4544,16 +4689,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &602741625
@@ -4568,7 +4713,7 @@ GameObject:
   - component: {fileID: 602741629}
   - component: {fileID: 602741628}
   - component: {fileID: 602741627}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4603,7 +4748,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 602741629}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -4643,10 +4793,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4676,7 +4826,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4697,16 +4847,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &676488853
@@ -4721,7 +4871,7 @@ GameObject:
   - component: {fileID: 676488857}
   - component: {fileID: 676488856}
   - component: {fileID: 676488855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4756,7 +4906,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 676488857}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -4796,10 +4951,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4829,7 +4984,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4850,16 +5005,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &688493196
@@ -4874,7 +5029,7 @@ GameObject:
   - component: {fileID: 688493200}
   - component: {fileID: 688493199}
   - component: {fileID: 688493198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4909,7 +5064,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 688493200}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -4949,10 +5109,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4982,7 +5142,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5003,16 +5163,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &691592948
@@ -5027,7 +5187,7 @@ GameObject:
   - component: {fileID: 691592952}
   - component: {fileID: 691592951}
   - component: {fileID: 691592950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5062,7 +5222,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 691592952}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -5102,10 +5267,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5135,7 +5300,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5156,16 +5321,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &701650397
@@ -5180,7 +5345,7 @@ GameObject:
   - component: {fileID: 701650401}
   - component: {fileID: 701650400}
   - component: {fileID: 701650399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5215,7 +5380,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 701650401}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -5255,10 +5425,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5288,7 +5458,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5309,16 +5479,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &746952573
@@ -5333,7 +5503,7 @@ GameObject:
   - component: {fileID: 746952577}
   - component: {fileID: 746952576}
   - component: {fileID: 746952575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5368,7 +5538,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 746952577}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -5408,10 +5583,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5441,7 +5616,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5462,16 +5637,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &752578162
@@ -5486,7 +5661,7 @@ GameObject:
   - component: {fileID: 752578166}
   - component: {fileID: 752578165}
   - component: {fileID: 752578164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5521,7 +5696,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 752578166}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -5561,10 +5741,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5594,7 +5774,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5615,16 +5795,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &772826835
@@ -5639,7 +5819,7 @@ GameObject:
   - component: {fileID: 772826839}
   - component: {fileID: 772826838}
   - component: {fileID: 772826837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5674,7 +5854,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 772826839}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -5714,10 +5899,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5747,7 +5932,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5768,16 +5953,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &783685019
@@ -5792,7 +5977,7 @@ GameObject:
   - component: {fileID: 783685023}
   - component: {fileID: 783685022}
   - component: {fileID: 783685021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5827,7 +6012,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 783685023}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -5867,10 +6057,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5900,7 +6090,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5921,16 +6111,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &785449491
@@ -5945,7 +6135,7 @@ GameObject:
   - component: {fileID: 785449495}
   - component: {fileID: 785449494}
   - component: {fileID: 785449493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5980,7 +6170,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 785449495}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -6020,10 +6215,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6053,7 +6248,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6074,16 +6269,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &786095389
@@ -6098,7 +6293,7 @@ GameObject:
   - component: {fileID: 786095393}
   - component: {fileID: 786095392}
   - component: {fileID: 786095391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6133,7 +6328,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 786095393}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -6173,10 +6373,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6206,7 +6406,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6227,16 +6427,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &795431247
@@ -6251,7 +6451,7 @@ GameObject:
   - component: {fileID: 795431251}
   - component: {fileID: 795431250}
   - component: {fileID: 795431249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickBlue 1Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6286,7 +6486,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 795431251}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 15
   isBreakable: 1
@@ -6326,10 +6531,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6359,7 +6564,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: e15b51444f240fe41bee494cfbb9206f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6380,16 +6585,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &851707510
@@ -6404,7 +6609,7 @@ GameObject:
   - component: {fileID: 851707514}
   - component: {fileID: 851707513}
   - component: {fileID: 851707512}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6439,7 +6644,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 851707514}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -6479,10 +6689,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6512,7 +6722,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6533,16 +6743,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &880539744
@@ -6557,7 +6767,7 @@ GameObject:
   - component: {fileID: 880539748}
   - component: {fileID: 880539747}
   - component: {fileID: 880539746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6592,7 +6802,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 880539748}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -6632,10 +6847,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6665,7 +6880,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6686,16 +6901,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &884850678
@@ -6710,7 +6925,7 @@ GameObject:
   - component: {fileID: 884850682}
   - component: {fileID: 884850681}
   - component: {fileID: 884850680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6745,7 +6960,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 884850682}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -6785,10 +7005,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6818,7 +7038,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 7415e73aef92d564da5f6e277274f12c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6839,18 +7059,86 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &937131311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937131314}
+  - component: {fileID: 937131313}
+  - component: {fileID: 937131312}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &937131312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937131311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &937131313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937131311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &937131314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937131311}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963320240
 GameObject:
   m_ObjectHideFlags: 0
@@ -6863,7 +7151,7 @@ GameObject:
   - component: {fileID: 963320244}
   - component: {fileID: 963320243}
   - component: {fileID: 963320242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6898,7 +7186,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 963320244}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -6938,10 +7231,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6971,7 +7264,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6992,16 +7285,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &987849150
@@ -7016,7 +7309,7 @@ GameObject:
   - component: {fileID: 987849154}
   - component: {fileID: 987849153}
   - component: {fileID: 987849152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7051,7 +7344,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 987849154}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -7091,10 +7389,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7124,7 +7422,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7145,16 +7443,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1013570779
@@ -7169,7 +7467,7 @@ GameObject:
   - component: {fileID: 1013570783}
   - component: {fileID: 1013570782}
   - component: {fileID: 1013570781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7204,7 +7502,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1013570783}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -7244,10 +7547,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7277,7 +7580,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7298,16 +7601,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1016933505
@@ -7322,7 +7625,7 @@ GameObject:
   - component: {fileID: 1016933509}
   - component: {fileID: 1016933508}
   - component: {fileID: 1016933507}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7357,7 +7660,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1016933509}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -7397,10 +7705,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7430,7 +7738,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7451,16 +7759,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1020724010
@@ -7475,7 +7783,7 @@ GameObject:
   - component: {fileID: 1020724014}
   - component: {fileID: 1020724013}
   - component: {fileID: 1020724012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7510,7 +7818,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1020724014}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -7550,10 +7863,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7583,7 +7896,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7604,16 +7917,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1030417080
@@ -7628,7 +7941,7 @@ GameObject:
   - component: {fileID: 1030417084}
   - component: {fileID: 1030417083}
   - component: {fileID: 1030417082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7663,7 +7976,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1030417084}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -7703,10 +8021,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7736,7 +8054,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7757,16 +8075,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1061562715
@@ -7781,7 +8099,7 @@ GameObject:
   - component: {fileID: 1061562719}
   - component: {fileID: 1061562718}
   - component: {fileID: 1061562717}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7816,7 +8134,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1061562719}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -7856,10 +8179,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7889,7 +8212,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7910,16 +8233,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1066846961
@@ -7934,7 +8257,7 @@ GameObject:
   - component: {fileID: 1066846965}
   - component: {fileID: 1066846964}
   - component: {fileID: 1066846963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7969,7 +8292,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1066846965}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -8009,10 +8337,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8042,7 +8370,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8063,16 +8391,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1070066069
@@ -8087,7 +8415,7 @@ GameObject:
   - component: {fileID: 1070066073}
   - component: {fileID: 1070066072}
   - component: {fileID: 1070066071}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8122,7 +8450,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1070066073}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -8162,10 +8495,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8195,7 +8528,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8216,16 +8549,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1081029169
@@ -8240,7 +8573,7 @@ GameObject:
   - component: {fileID: 1081029173}
   - component: {fileID: 1081029172}
   - component: {fileID: 1081029171}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8275,7 +8608,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1081029173}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -8315,10 +8653,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8348,7 +8686,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8369,16 +8707,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1090933226
@@ -8393,7 +8731,7 @@ GameObject:
   - component: {fileID: 1090933230}
   - component: {fileID: 1090933229}
   - component: {fileID: 1090933228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8428,7 +8766,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1090933230}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -8468,10 +8811,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8501,7 +8844,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8522,16 +8865,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1102463765
@@ -8546,7 +8889,7 @@ GameObject:
   - component: {fileID: 1102463769}
   - component: {fileID: 1102463768}
   - component: {fileID: 1102463767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8581,7 +8924,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1102463769}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -8621,10 +8969,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8654,7 +9002,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8675,16 +9023,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1156682111
@@ -8699,7 +9047,7 @@ GameObject:
   - component: {fileID: 1156682115}
   - component: {fileID: 1156682114}
   - component: {fileID: 1156682113}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8734,7 +9082,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1156682115}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -8774,10 +9127,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8807,7 +9160,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8828,16 +9181,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1175800372
@@ -8852,7 +9205,7 @@ GameObject:
   - component: {fileID: 1175800376}
   - component: {fileID: 1175800375}
   - component: {fileID: 1175800374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickBlue 1Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8887,7 +9240,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1175800376}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 15
   isBreakable: 1
@@ -8927,10 +9285,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8960,7 +9318,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: e15b51444f240fe41bee494cfbb9206f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8981,16 +9339,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1259063795
@@ -9005,7 +9363,7 @@ GameObject:
   - component: {fileID: 1259063799}
   - component: {fileID: 1259063798}
   - component: {fileID: 1259063797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9040,7 +9398,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1259063799}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -9080,10 +9443,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9113,7 +9476,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9134,16 +9497,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1294702632
@@ -9158,7 +9521,7 @@ GameObject:
   - component: {fileID: 1294702636}
   - component: {fileID: 1294702635}
   - component: {fileID: 1294702634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9193,7 +9556,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1294702636}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -9233,10 +9601,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9266,7 +9634,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9287,16 +9655,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1305807005
@@ -9311,7 +9679,7 @@ GameObject:
   - component: {fileID: 1305807009}
   - component: {fileID: 1305807008}
   - component: {fileID: 1305807007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9346,7 +9714,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1305807009}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -9386,10 +9759,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9419,7 +9792,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9440,16 +9813,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1309928673
@@ -9464,7 +9837,7 @@ GameObject:
   - component: {fileID: 1309928677}
   - component: {fileID: 1309928676}
   - component: {fileID: 1309928675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9499,7 +9872,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1309928677}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -9539,10 +9917,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9572,7 +9950,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9593,16 +9971,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1381426873
@@ -9617,7 +9995,7 @@ GameObject:
   - component: {fileID: 1381426877}
   - component: {fileID: 1381426876}
   - component: {fileID: 1381426875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9652,7 +10030,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1381426877}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -9692,10 +10075,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9725,7 +10108,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9746,16 +10129,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1402268351
@@ -9770,7 +10153,7 @@ GameObject:
   - component: {fileID: 1402268355}
   - component: {fileID: 1402268354}
   - component: {fileID: 1402268353}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9805,7 +10188,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1402268355}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -9845,10 +10233,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9878,7 +10266,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9899,16 +10287,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1411954291
@@ -9923,7 +10311,7 @@ GameObject:
   - component: {fileID: 1411954295}
   - component: {fileID: 1411954294}
   - component: {fileID: 1411954293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9958,7 +10346,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1411954295}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -9998,10 +10391,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10031,7 +10424,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10052,16 +10445,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1466975119
@@ -10076,7 +10469,7 @@ GameObject:
   - component: {fileID: 1466975123}
   - component: {fileID: 1466975122}
   - component: {fileID: 1466975121}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10111,7 +10504,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1466975123}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -10151,10 +10549,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10184,7 +10582,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10205,16 +10603,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1483418365
@@ -10229,7 +10627,7 @@ GameObject:
   - component: {fileID: 1483418369}
   - component: {fileID: 1483418368}
   - component: {fileID: 1483418367}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10264,7 +10662,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1483418369}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -10304,10 +10707,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10337,7 +10740,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10358,16 +10761,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1525739613
@@ -10382,7 +10785,7 @@ GameObject:
   - component: {fileID: 1525739617}
   - component: {fileID: 1525739616}
   - component: {fileID: 1525739615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10417,7 +10820,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1525739617}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -10457,10 +10865,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10490,7 +10898,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10511,16 +10919,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1609753432
@@ -10535,7 +10943,7 @@ GameObject:
   - component: {fileID: 1609753436}
   - component: {fileID: 1609753435}
   - component: {fileID: 1609753434}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10570,7 +10978,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1609753436}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -10610,10 +11023,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10643,7 +11056,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10664,16 +11077,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1619741939
@@ -10688,7 +11101,7 @@ GameObject:
   - component: {fileID: 1619741943}
   - component: {fileID: 1619741942}
   - component: {fileID: 1619741941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10723,7 +11136,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1619741943}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
   isBreakable: 1
@@ -10763,10 +11181,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10796,7 +11214,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10817,16 +11235,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1625681541
@@ -10841,7 +11259,7 @@ GameObject:
   - component: {fileID: 1625681545}
   - component: {fileID: 1625681544}
   - component: {fileID: 1625681543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10876,7 +11294,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1625681545}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -10916,10 +11339,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10949,7 +11372,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 7415e73aef92d564da5f6e277274f12c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10970,16 +11393,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1640413862
@@ -10994,7 +11417,7 @@ GameObject:
   - component: {fileID: 1640413866}
   - component: {fileID: 1640413865}
   - component: {fileID: 1640413864}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11029,7 +11452,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1640413866}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -11069,10 +11497,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11102,7 +11530,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11123,16 +11551,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1705835276
@@ -11147,7 +11575,7 @@ GameObject:
   - component: {fileID: 1705835280}
   - component: {fileID: 1705835279}
   - component: {fileID: 1705835278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11182,7 +11610,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1705835280}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -11222,10 +11655,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11255,7 +11688,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11276,16 +11709,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1803178954
@@ -11300,7 +11733,7 @@ GameObject:
   - component: {fileID: 1803178958}
   - component: {fileID: 1803178957}
   - component: {fileID: 1803178956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11335,7 +11768,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1803178958}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -11375,10 +11813,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11408,7 +11846,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11429,16 +11867,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1821097254
@@ -11453,7 +11891,7 @@ GameObject:
   - component: {fileID: 1821097258}
   - component: {fileID: 1821097257}
   - component: {fileID: 1821097256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11488,7 +11926,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1821097258}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
   isBreakable: 1
@@ -11528,10 +11971,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11561,7 +12004,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11582,16 +12025,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1831638961
@@ -11606,7 +12049,7 @@ GameObject:
   - component: {fileID: 1831638965}
   - component: {fileID: 1831638964}
   - component: {fileID: 1831638963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11641,7 +12084,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1831638965}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -11681,10 +12129,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11714,7 +12162,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11735,16 +12183,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1861138188
@@ -11759,7 +12207,7 @@ GameObject:
   - component: {fileID: 1861138192}
   - component: {fileID: 1861138191}
   - component: {fileID: 1861138190}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickYellow(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11794,7 +12242,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1861138192}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
   isBreakable: 1
@@ -11834,10 +12287,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11867,7 +12320,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11888,16 +12341,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1867307711
@@ -11912,7 +12365,7 @@ GameObject:
   - component: {fileID: 1867307715}
   - component: {fileID: 1867307714}
   - component: {fileID: 1867307713}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11947,7 +12400,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1867307715}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -11987,10 +12445,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12020,7 +12478,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12041,16 +12499,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1884029426
@@ -12065,7 +12523,7 @@ GameObject:
   - component: {fileID: 1884029430}
   - component: {fileID: 1884029429}
   - component: {fileID: 1884029428}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 2life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12100,7 +12558,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1884029430}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
   isBreakable: 1
@@ -12140,10 +12603,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12173,7 +12636,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12194,16 +12657,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1894888363
@@ -12218,7 +12681,7 @@ GameObject:
   - component: {fileID: 1894888367}
   - component: {fileID: 1894888366}
   - component: {fileID: 1894888365}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12253,7 +12716,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1894888367}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -12293,10 +12761,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12326,7 +12794,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12347,16 +12815,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1923733936
@@ -12371,7 +12839,7 @@ GameObject:
   - component: {fileID: 1923733940}
   - component: {fileID: 1923733939}
   - component: {fileID: 1923733938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 3life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12406,7 +12874,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1923733940}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
   isBreakable: 1
@@ -12446,10 +12919,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12479,7 +12952,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12500,16 +12973,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1928826159
@@ -12524,7 +12997,7 @@ GameObject:
   - component: {fileID: 1928826163}
   - component: {fileID: 1928826162}
   - component: {fileID: 1928826161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12559,7 +13032,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 1928826163}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -12599,10 +13077,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12632,7 +13110,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12653,16 +13131,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2031465263
@@ -12677,7 +13155,7 @@ GameObject:
   - component: {fileID: 2031465267}
   - component: {fileID: 2031465266}
   - component: {fileID: 2031465265}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickPink 1life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12712,7 +13190,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 2031465267}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
   isBreakable: 1
@@ -12752,10 +13235,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12785,7 +13268,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12806,16 +13289,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2033561250
@@ -12830,7 +13313,7 @@ GameObject:
   - component: {fileID: 2033561254}
   - component: {fileID: 2033561253}
   - component: {fileID: 2033561252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickGreen 2lives(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12865,7 +13348,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 2033561254}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
   isBreakable: 1
@@ -12905,10 +13393,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12938,7 +13426,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12959,16 +13447,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2051641633
@@ -12983,7 +13471,7 @@ GameObject:
   - component: {fileID: 2051641637}
   - component: {fileID: 2051641636}
   - component: {fileID: 2051641635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickRed(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13018,7 +13506,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 2051641637}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
   isBreakable: 1
@@ -13058,10 +13551,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -13091,7 +13584,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13112,16 +13605,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2068544152
@@ -13134,7 +13627,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2068544154}
   - component: {fileID: 2068544153}
-  m_Layer: 0
+  - component: {fileID: 2068544155}
+  m_Layer: 6
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13160,7 +13654,7 @@ MonoBehaviour:
   BrickWidth: 0.7
   BrickHeigth: 0.4
   SpawnRate: 0.3
-  Parent: {fileID: 2068544154}
+  Parent: {fileID: 0}
   EASY_X_ORIGIN: 0
   EASY_X_MAX: 0
   EASY_Y_ORIGIN: 0
@@ -13173,14 +13667,17 @@ MonoBehaviour:
   HARD_X_MAX: 0
   HARD_Y_ORIGIN: 0
   HARD_Y_MAX: 0
---- !u!4 &2068544154
-Transform:
+  EXTREME_X_ORIGIN: 0
+  EXTREME_X_MAX: 0
+  EXTREME_Y_ORIGIN: 0
+  EXTREME_Y_MAX: 0
+--- !u!224 &2068544154
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068544152}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -13274,6 +13771,19 @@ Transform:
   - {fileID: 795431248}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 267, y: 189}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2068544155
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068544152}
+  m_CullTransparentMesh: 1
 --- !u!1 &2090695454
 GameObject:
   m_ObjectHideFlags: 0
@@ -13286,7 +13796,7 @@ GameObject:
   - component: {fileID: 2090695458}
   - component: {fileID: 2090695457}
   - component: {fileID: 2090695456}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrickOrange 3Life(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13321,7 +13831,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
-  BreakSprites: []
+  BrickSpriteRenderer: {fileID: 2090695458}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 10
   isBreakable: 1
@@ -13361,10 +13876,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -13394,7 +13909,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 7415e73aef92d564da5f6e277274f12c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13415,16 +13930,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1660057539 &9223372036854775807
@@ -13432,3 +13947,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2068544154}
+  - {fileID: 937131314}

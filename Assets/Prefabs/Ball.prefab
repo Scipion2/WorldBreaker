@@ -180,6 +180,7 @@ MonoBehaviour:
   hitAudio: {fileID: 2214382518561003315}
   body: {fileID: 2214382518561003326}
   ballPrefab: {fileID: 2214382518561003314}
+  ColorBall: {fileID: 3799193822148313312}
   launchSpeed: 14
   maxSpeed: 100
   BallSize: 0.2
@@ -303,3 +304,4 @@ MonoBehaviour:
   Red: 0
   Blue: 0
   Green: 0
+  isAutoModifier: 1

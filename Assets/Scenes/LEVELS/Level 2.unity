@@ -165,11 +165,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 30653519}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &30653518
 BoxCollider2D:
@@ -207,10 +211,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -240,7 +244,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -261,13 +265,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -319,11 +323,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 38195904}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &38195903
 BoxCollider2D:
@@ -361,10 +369,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -394,7 +402,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -415,13 +423,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -473,11 +481,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 100907100}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &100907099
 BoxCollider2D:
@@ -515,10 +527,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -548,7 +560,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -569,13 +581,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -627,11 +639,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 115973858}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &115973857
 BoxCollider2D:
@@ -669,10 +685,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -702,7 +718,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -723,13 +739,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -781,11 +797,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 117683135}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &117683134
 BoxCollider2D:
@@ -823,10 +843,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -856,7 +876,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -877,13 +897,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -935,11 +955,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 119169280}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 0
 --- !u!61 &119169279
 BoxCollider2D:
@@ -977,10 +1001,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1010,7 +1034,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 66f72c3f1ba8abb418249cc4413ede3f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1031,13 +1055,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7476548129043048465, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1089,11 +1113,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 123009970}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &123009969
 BoxCollider2D:
@@ -1131,10 +1159,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1164,7 +1192,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1185,13 +1213,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1243,11 +1271,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 165453244}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &165453243
 BoxCollider2D:
@@ -1285,10 +1317,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1318,7 +1350,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1339,13 +1371,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1397,11 +1429,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 168516486}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &168516485
 BoxCollider2D:
@@ -1439,10 +1475,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1472,7 +1508,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1493,13 +1529,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1551,11 +1587,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 182359268}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &182359267
 BoxCollider2D:
@@ -1593,10 +1633,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1626,7 +1666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1647,13 +1687,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1705,11 +1745,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 219068132}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &219068131
 BoxCollider2D:
@@ -1747,10 +1791,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1780,7 +1824,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1801,13 +1845,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1859,11 +1903,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 305353801}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 15
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &305353800
 BoxCollider2D:
@@ -1901,10 +1949,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1934,7 +1982,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: e15b51444f240fe41bee494cfbb9206f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1955,13 +2003,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2013,11 +2061,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 407722759}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &407722758
 BoxCollider2D:
@@ -2055,10 +2107,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2088,7 +2140,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2109,13 +2161,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2167,11 +2219,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 421114144}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &421114143
 BoxCollider2D:
@@ -2209,10 +2265,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2242,7 +2298,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2263,13 +2319,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2321,11 +2377,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 434992491}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &434992490
 BoxCollider2D:
@@ -2363,10 +2423,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2396,7 +2456,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2417,13 +2477,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2475,11 +2535,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 447801994}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &447801993
 BoxCollider2D:
@@ -2517,10 +2581,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2550,7 +2614,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2571,13 +2635,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2629,11 +2693,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 472960400}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &472960399
 BoxCollider2D:
@@ -2671,10 +2739,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2704,7 +2772,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2725,13 +2793,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2783,11 +2851,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
+  BrickSpriteRenderer: {fileID: 515985226}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
   isBreakable: 1
 --- !u!61 &515985225
 BoxCollider2D:
@@ -2825,10 +2897,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2858,7 +2930,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2879,13 +2951,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2937,11 +3009,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 525992510}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &525992509
 BoxCollider2D:
@@ -2979,10 +3055,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3012,7 +3088,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3033,13 +3109,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3091,11 +3167,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
+  BrickSpriteRenderer: {fileID: 550022900}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
   isBreakable: 1
 --- !u!61 &550022899
 BoxCollider2D:
@@ -3133,10 +3213,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3166,7 +3246,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3187,13 +3267,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3245,11 +3325,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 578359601}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &578359600
 BoxCollider2D:
@@ -3287,10 +3371,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3320,7 +3404,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3341,13 +3425,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3399,11 +3483,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 606939006}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &606939005
 BoxCollider2D:
@@ -3441,10 +3529,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3474,7 +3562,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3495,13 +3583,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3553,11 +3641,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 618915605}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &618915604
 BoxCollider2D:
@@ -3595,10 +3687,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3628,7 +3720,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3649,13 +3741,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3707,11 +3799,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 650642305}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &650642304
 BoxCollider2D:
@@ -3749,10 +3845,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3782,7 +3878,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3803,13 +3899,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3861,11 +3957,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 698590248}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &698590247
 BoxCollider2D:
@@ -3903,10 +4003,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3936,7 +4036,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3957,13 +4057,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4015,11 +4115,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 708621563}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &708621562
 BoxCollider2D:
@@ -4057,10 +4161,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4090,7 +4194,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4111,13 +4215,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4169,11 +4273,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 728192164}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &728192163
 BoxCollider2D:
@@ -4211,10 +4319,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4244,7 +4352,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4265,13 +4373,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4323,11 +4431,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
+  BrickSpriteRenderer: {fileID: 737724283}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
   isBreakable: 1
 --- !u!61 &737724282
 BoxCollider2D:
@@ -4365,10 +4477,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4398,7 +4510,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4419,13 +4531,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4477,11 +4589,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 755084255}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &755084254
 BoxCollider2D:
@@ -4519,10 +4635,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4552,7 +4668,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4573,13 +4689,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4631,11 +4747,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 799623446}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &799623445
 BoxCollider2D:
@@ -4673,10 +4793,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4706,7 +4826,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4727,13 +4847,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4785,11 +4905,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 828236891}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &828236890
 BoxCollider2D:
@@ -4827,10 +4951,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4860,7 +4984,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4881,13 +5005,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4939,11 +5063,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
+  BrickSpriteRenderer: {fileID: 845660428}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
   isBreakable: 1
 --- !u!61 &845660427
 BoxCollider2D:
@@ -4981,10 +5109,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5014,7 +5142,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5035,13 +5163,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5093,11 +5221,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
+  BrickSpriteRenderer: {fileID: 881233997}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
   isBreakable: 1
 --- !u!61 &881233996
 BoxCollider2D:
@@ -5135,10 +5267,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5168,7 +5300,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5189,13 +5321,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5247,11 +5379,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 934390011}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &934390010
 BoxCollider2D:
@@ -5289,10 +5425,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5322,7 +5458,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5343,13 +5479,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5401,11 +5537,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1049901479}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 30
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1049901478
 BoxCollider2D:
@@ -5443,10 +5583,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5476,7 +5616,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5497,13 +5637,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5555,11 +5695,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1069632758}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1069632757
 BoxCollider2D:
@@ -5597,10 +5741,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5630,7 +5774,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5651,13 +5795,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5709,11 +5853,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1079915069}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1079915068
 BoxCollider2D:
@@ -5751,10 +5899,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5784,7 +5932,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5805,13 +5953,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5863,11 +6011,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1108473545}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1108473544
 BoxCollider2D:
@@ -5905,10 +6057,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5938,7 +6090,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5959,13 +6111,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6017,11 +6169,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1117259715}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1117259714
 BoxCollider2D:
@@ -6059,10 +6215,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6092,7 +6248,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6113,13 +6269,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6171,11 +6327,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1127974751}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1127974750
 BoxCollider2D:
@@ -6213,10 +6373,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6246,7 +6406,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6267,13 +6427,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6325,11 +6485,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1129144953}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 15
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1129144952
 BoxCollider2D:
@@ -6367,10 +6531,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6400,7 +6564,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: e15b51444f240fe41bee494cfbb9206f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6421,13 +6585,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6479,11 +6643,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1144452508}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 0
 --- !u!61 &1144452507
 BoxCollider2D:
@@ -6521,10 +6689,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6554,7 +6722,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 66f72c3f1ba8abb418249cc4413ede3f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6575,13 +6743,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7476548129043048465, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6633,11 +6801,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1179483051}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1179483050
 BoxCollider2D:
@@ -6675,10 +6847,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6708,7 +6880,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6729,13 +6901,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6787,11 +6959,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1199106190}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1199106189
 BoxCollider2D:
@@ -6829,10 +7005,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6862,7 +7038,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6883,13 +7059,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6941,11 +7117,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1220215370}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1220215369
 BoxCollider2D:
@@ -6983,10 +7163,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7016,7 +7196,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7037,13 +7217,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7095,11 +7275,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1240270831}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1240270830
 BoxCollider2D:
@@ -7137,10 +7321,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7170,7 +7354,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7191,13 +7375,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7249,11 +7433,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1272219433}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1272219432
 BoxCollider2D:
@@ -7291,10 +7479,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7324,7 +7512,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7345,13 +7533,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7403,11 +7591,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1274233481}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1274233480
 BoxCollider2D:
@@ -7445,10 +7637,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7478,7 +7670,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7499,13 +7691,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7557,11 +7749,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1275631691}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1275631690
 BoxCollider2D:
@@ -7599,10 +7795,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7632,7 +7828,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7653,13 +7849,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7711,11 +7907,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1317479012}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1317479011
 BoxCollider2D:
@@ -7753,10 +7953,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7786,7 +7986,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 74dc24b622ffe374383d462c94fbaf20, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7807,13 +8007,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5635590106602006614, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7865,11 +8065,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1325134061}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1325134060
 BoxCollider2D:
@@ -7907,10 +8111,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7940,7 +8144,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7961,13 +8165,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8019,11 +8223,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1334100851}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1334100850
 BoxCollider2D:
@@ -8061,10 +8269,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8094,7 +8302,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8115,13 +8323,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8173,11 +8381,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1341643611}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1341643610
 BoxCollider2D:
@@ -8215,10 +8427,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8248,7 +8460,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8269,13 +8481,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8327,11 +8539,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1365615813}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1365615812
 BoxCollider2D:
@@ -8369,10 +8585,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8402,7 +8618,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 86f022e7bce1c684bb1b9f566d9b5a8d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8423,13 +8639,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8481,11 +8697,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1366568296}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1366568295
 BoxCollider2D:
@@ -8523,10 +8743,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8556,7 +8776,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8577,13 +8797,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8635,11 +8855,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1418161949}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1418161948
 BoxCollider2D:
@@ -8677,10 +8901,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8710,7 +8934,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8731,13 +8955,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8789,11 +9013,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
+  BrickSpriteRenderer: {fileID: 1421161341}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 2968809408051495735, guid: be99c81d23cd3ae4c9f12f713bcc1980, type: 3}
   isBreakable: 1
 --- !u!61 &1421161340
 BoxCollider2D:
@@ -8831,10 +9059,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8864,7 +9092,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8885,13 +9113,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8943,11 +9171,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1434402688}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1434402687
 BoxCollider2D:
@@ -8985,10 +9217,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9018,7 +9250,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9039,13 +9271,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9097,11 +9329,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1437834522}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1437834521
 BoxCollider2D:
@@ -9139,10 +9375,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9172,7 +9408,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9193,13 +9429,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9251,11 +9487,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1477631126}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1477631125
 BoxCollider2D:
@@ -9293,10 +9533,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9326,7 +9566,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9347,13 +9587,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9405,11 +9645,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1494868818}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1494868817
 BoxCollider2D:
@@ -9447,10 +9691,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9480,7 +9724,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9501,13 +9745,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9559,11 +9803,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1495808725}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1495808724
 BoxCollider2D:
@@ -9601,10 +9849,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9634,7 +9882,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9655,13 +9903,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9713,11 +9961,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1584405571}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 0
 --- !u!61 &1584405570
 BoxCollider2D:
@@ -9755,10 +10007,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9788,7 +10040,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 66f72c3f1ba8abb418249cc4413ede3f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9809,13 +10061,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7476548129043048465, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9867,11 +10119,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1662163232}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1662163231
 BoxCollider2D:
@@ -9909,10 +10165,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9942,7 +10198,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9963,13 +10219,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10021,11 +10277,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
+  BrickSpriteRenderer: {fileID: 1686175764}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
   isBreakable: 1
 --- !u!61 &1686175763
 BoxCollider2D:
@@ -10063,10 +10323,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10096,7 +10356,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10117,13 +10377,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10175,11 +10435,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1745522574}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1745522573
 BoxCollider2D:
@@ -10217,10 +10481,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10250,7 +10514,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10271,13 +10535,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10329,11 +10593,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1782972757}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 10
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 0
 --- !u!61 &1782972756
 BoxCollider2D:
@@ -10371,10 +10639,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10404,7 +10672,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 66f72c3f1ba8abb418249cc4413ede3f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10425,13 +10693,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7476548129043048465, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10483,11 +10751,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1804954554}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 50
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1804954553
 BoxCollider2D:
@@ -10525,10 +10797,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10558,7 +10830,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: b16f0e0b57af3664e88ae1f67c4abec0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10579,13 +10851,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10637,11 +10909,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1810183203}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1810183202
 BoxCollider2D:
@@ -10679,10 +10955,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10712,7 +10988,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10733,13 +11009,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10791,11 +11067,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 1861878913}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &1861878912
 BoxCollider2D:
@@ -10833,10 +11113,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -10866,7 +11146,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10887,13 +11167,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10948,6 +11228,10 @@ MonoBehaviour:
   HARD_X_MAX: 0
   HARD_Y_ORIGIN: 0
   HARD_Y_MAX: 0
+  EXTREME_X_ORIGIN: 0
+  EXTREME_X_MAX: 0
+  EXTREME_Y_ORIGIN: 0
+  EXTREME_Y_MAX: 0
 --- !u!4 &1869300534
 Transform:
   m_ObjectHideFlags: 0
@@ -11091,11 +11375,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
+  BrickSpriteRenderer: {fileID: 1881830508}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 1009284108952660973, guid: 8e8e6128932e87c4d9f392b7922e60e3, type: 3}
   isBreakable: 1
 --- !u!61 &1881830507
 BoxCollider2D:
@@ -11133,10 +11421,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11166,7 +11454,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11187,13 +11475,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11245,11 +11533,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1883210556}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1883210555
 BoxCollider2D:
@@ -11287,10 +11579,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11320,7 +11612,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11341,13 +11633,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11399,11 +11691,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1913546591}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1913546590
 BoxCollider2D:
@@ -11441,10 +11737,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11474,7 +11770,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11495,13 +11791,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11553,11 +11849,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1919923291}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 30
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1919923290
 BoxCollider2D:
@@ -11595,10 +11895,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11628,7 +11928,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 8c126976835e6654dac104258e843cd0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11649,13 +11949,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8181145950336148699, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11707,11 +12007,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1926749201}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 100
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1926749200
 BoxCollider2D:
@@ -11749,10 +12053,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11782,7 +12086,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 49e7e7cee726ce24193d4e4741903858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11803,13 +12107,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1294789479124868737, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11861,11 +12165,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1939804655}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1939804654
 BoxCollider2D:
@@ -11903,10 +12211,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11936,7 +12244,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11957,13 +12265,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12015,11 +12323,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1962135478}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 60
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1962135477
 BoxCollider2D:
@@ -12057,10 +12369,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12090,7 +12402,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12111,13 +12423,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12169,11 +12481,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 1962965595}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 1
   scoreValue: 35
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &1962965594
 BoxCollider2D:
@@ -12211,10 +12527,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12244,7 +12560,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 61fd7d4dc37fb6e4381cb7847f074a8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12265,13 +12581,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8247230141364062625, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12323,11 +12639,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 2045469087}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &2045469086
 BoxCollider2D:
@@ -12365,10 +12685,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12398,7 +12718,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12419,13 +12739,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12477,11 +12797,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
+  BrickSpriteRenderer: {fileID: 2055724454}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 867645390084699273, guid: fcdf16ac01247d242b418e1fecf487f8, type: 3}
   isBreakable: 1
 --- !u!61 &2055724453
 BoxCollider2D:
@@ -12519,10 +12843,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12552,7 +12876,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12573,13 +12897,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12631,11 +12955,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 2078056987}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 2
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &2078056986
 BoxCollider2D:
@@ -12673,10 +13001,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12706,7 +13034,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
+  - {fileID: 2100000, guid: c3bbf9e4392b1d749af4b275e32fe05a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12727,13 +13055,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7542533600708421197, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12785,11 +13113,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0480e9bed03f054bb33e116fbddde05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reward: {fileID: 0}
+  BrickSpriteRenderer: {fileID: 2103552809}
+  BreakSprites:
+  - {fileID: 8428177745923635920, guid: 0cba76eca46ef334bb915ad514028561, type: 3}
+  - {fileID: -3271683133510526831, guid: 08dfdfd72216c52439a1a0f3a7ec458e, type: 3}
+  - {fileID: -5419623746415197699, guid: 59645d03ade186f4fbb968fb59eeec0f, type: 3}
+  - {fileID: 9009433772825593001, guid: 64f9c508a99f1d246a8883f6c846b5ff, type: 3}
   lives: 3
   scoreValue: 20
-  litBrick: {fileID: 2100000, guid: 17b4b2eb0c710814183335cbbf431fa7, type: 2}
-  unlitBrick: {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
-  reward: {fileID: 0}
   isBreakable: 1
 --- !u!61 &2103552808
 BoxCollider2D:
@@ -12827,10 +13159,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.04, z: 0.04, w: 0.04}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.32}
-    newSize: {x: 0.64, y: 0.32}
+    oldSize: {x: 0.75, y: 0.3}
+    newSize: {x: 0.75, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12860,7 +13192,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e655ead7432508d41bda0ca08b1ab6f5, type: 2}
+  - {fileID: 2100000, guid: 57ee0206494ace1419213f73d6b10b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12881,13 +13213,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8741062010079899109, guid: bf837ff28a5f41941b6147275ff2f11f,
+  m_Sprite: {fileID: 3020876465942750252, guid: e2b06b4192e47d442ade7947414a5eb5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.75, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

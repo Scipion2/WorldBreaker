@@ -64,7 +64,7 @@ public class Paddle : MonoBehaviour
             {
 
                 float angle=Vector2.SignedAngle(this.transform.position,other.gameObject.transform.position);
-                other.rigidbody.AddForce(Vector2.right*angle*AnglePower);
+                //other.rigidbody.AddForce(Vector2.right*angle*AnglePower);
 
             }
 

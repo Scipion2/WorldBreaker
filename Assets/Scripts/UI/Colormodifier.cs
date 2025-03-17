@@ -11,6 +11,7 @@ public class Colormodifier : MonoBehaviour
     private Color currentColor;
     [SerializeField] [Range(0,255)] private float Red,Blue,Green;
     private float ColorDelta=0.25f;
+    public bool isAutoModifier=true;
 
     public void Start()
     {
@@ -24,6 +25,14 @@ public class Colormodifier : MonoBehaviour
     }
 
     public void Update()
+    {
+
+        if(isAutoModifier)
+            Modifier();
+
+    }
+
+    private void Modifier()
     {
 
         if(Red==255 && Blue==0 && Green!=0)

@@ -20,7 +20,7 @@ public class LevelManager : MonoBehaviour
     //SETTERS
 
         public void InitCurrentLevel(){CurrentLevel=-1;}//Setter To Reset CurrentLevel
-        public void SetisLevelAvailable(bool value){isLevelAvailable[CurrentLevel+1]=value; if(value){DataManager.instance.SaveClassicLevel(CurrentLevel+1);}}
+        public void SetisLevelAvailable(bool value){isLevelAvailable[CurrentLevel+1<ClassicLevelCount ? CurrentLevel+1 : 0]=value; if(value){DataManager.instance.SaveClassicLevel(CurrentLevel+1);}}
 
 
     public static LevelManager instance;
@@ -140,6 +140,7 @@ public class LevelManager : MonoBehaviour
                     GameManager.instance.ResetGame(3);
                     GoToLevel(CurrentLevel);
                     UIManager.instance.SetLevelDisplay("Level :",(CurrentLevel+1).ToString());
+                    UIManager.instance.SetClassicBackgroundSprite(CurrentLevel);
 
                 }else
                 {

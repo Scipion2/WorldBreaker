@@ -99,8 +99,8 @@ public class Spawner : MonoBehaviour
 
         }
 
-        if(BrickManager.instance.isEmpty())
-            SpawnMap();
+        /*if(BrickManager.instance.isEmpty())
+            SpawnMap();*/
 
     }
 

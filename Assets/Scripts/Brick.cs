@@ -43,10 +43,12 @@ public class Brick : MonoBehaviour
         {
             // First check if collision is due to the ball
             ball = other.gameObject.GetComponent<Ball>();
+
             if (ball && isBreakable)
             {
                 // Decrease lives count
                 lives--;
+
                 if (lives == 0)
                 {
                     // Tells the GameManager this brick has been broken

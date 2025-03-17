@@ -8,7 +8,7 @@ public class Reward : MonoBehaviour
     [Space(10)]
 
         [SerializeField] private RewardTypes reward; // Creates a variable as a dropdown of types, as defined in Paddle.cs
-        [SerializeField] private GameObject RewardIcon;
+        //[SerializeField] private GameObject RewardIcon;
 
     [Header("Collide Target")]
     [Space(10)]
