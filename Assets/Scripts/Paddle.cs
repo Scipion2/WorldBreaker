@@ -63,8 +63,7 @@ public class Paddle : MonoBehaviour
             if(other!=null && other.gameObject.tag == "Ball")
             {
 
-                float angle=Vector2.SignedAngle(this.transform.position,other.gameObject.transform.position);
-                //other.rigidbody.AddForce(Vector2.right*angle*AnglePower);
+                //
 
             }
 

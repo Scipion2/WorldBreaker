@@ -181,8 +181,9 @@ MonoBehaviour:
   body: {fileID: 2214382518561003326}
   ballPrefab: {fileID: 2214382518561003314}
   ColorBall: {fileID: 3799193822148313312}
+  AnglePower: 10
   launchSpeed: 14
-  maxSpeed: 100
+  maxSpeed: 20
   BallSize: 0.2
   hitSounds:
   - {fileID: 8300000, guid: ef7506809e3539d44a20483e1af5ac99, type: 3}

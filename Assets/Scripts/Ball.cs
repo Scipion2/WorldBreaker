@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour
     [Space(10)]
 
         public float launchSpeed = 1.0f;
-        public float maxSpeed = 255f;
+        public float maxSpeed = 25f;
         public float BallSize=0.2f;
 
     [Header("Audio Data")]
@@ -89,9 +89,10 @@ public class Ball : MonoBehaviour
             {
 
                 float angle=Vector2.SignedAngle(this.transform.position,other.gameObject.transform.position);
-                body.AddForce(Vector2.right*angle*AnglePower);
+                body.AddForce(Vector2.left*angle*AnglePower);
 
             }
+
 
             /*if(other!=null && other.gameObject.tag=="MultiBall")
             {
