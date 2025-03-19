@@ -143,6 +143,7 @@ public class GameManager : MonoBehaviour
         isAbleToPlay = true;
         UIManager.instance.DisplayStartPanel(false);
 
+        ClearBalls();
         SetTankLives(Lives);
 
         if(CurrentBall==null)
@@ -260,7 +261,7 @@ public class GameManager : MonoBehaviour
         }else
         {
 
-            UpdateLives();
+            UpdateLivesTank();
             CurrentBall.transform.parent=PadleTransform;
             return true;
 
@@ -268,7 +269,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void UpdateLives()
+    private void UpdateLivesTank()
     {
 
         Ball LiveToLose=PlayerBalls[PlayerBalls.Count-1];
